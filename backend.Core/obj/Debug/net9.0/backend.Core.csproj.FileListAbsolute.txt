@@ -1,0 +1,12 @@
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\bin\Debug\net9.0\backend.Core.deps.json
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\bin\Debug\net9.0\backend.Core.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\bin\Debug\net9.0\backend.Core.pdb
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\backend.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\backend.Core.AssemblyInfoInputs.cache
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\backend.Core.AssemblyInfo.cs
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\backend.Core.csproj.CoreCompileInputs.cache
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\backend.Core.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\refint\backend.Core.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\backend.Core.pdb
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\ref\backend.Core.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\backend.Core.csproj.AssemblyReference.cache

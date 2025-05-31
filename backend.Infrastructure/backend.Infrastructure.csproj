@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\backend.Core\backend.Core.csproj" />
+      <ProjectReference Include="..\backend.DataAccess.Postgres\backend.DataAccess.Postgres.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+      <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.5" />
+      <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.0.1" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.Http">
+        <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.AspNetCore.App\9.0.2\Microsoft.AspNetCore.Http.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
