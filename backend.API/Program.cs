@@ -1,4 +1,3 @@
-using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using backend.API.RequestModels;
 using backend.API.ResponseModels;
@@ -132,7 +131,7 @@ app.MapPost("/api/login", async (
     context.Response.Cookies.Append("accessToken", accessToken);
     context.Response.Cookies.Append("refreshToken", refreshToken.Token);
 
-    return Results.Ok(refreshToken.Token);
+    return Results.Ok();
 });
 
 app.MapPost("/api/refresh-tokens", async (
