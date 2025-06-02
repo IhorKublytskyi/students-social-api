@@ -13,7 +13,7 @@ public class UserEntity
     public DateTime BirthDate { get; set; }
     public string Biography { get; set; } = string.Empty;
     public DateTime CreatedAt { get; set; }
-    public bool Online { get; set; }
+    public bool IsOnline { get; set; }
     public List<PostEntity>? Posts { get; set; }
     public List<CommentEntity>? Comments { get; set; }
     public List<SubscriptionEntity> Subscriptions { get; set; }

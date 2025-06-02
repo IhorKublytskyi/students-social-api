@@ -1,3 +1,4 @@
+using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using backend.API.RequestModels;
 using backend.API.ResponseModels;
@@ -10,6 +11,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.CookiePolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using TokenReader = backend.Infrastructure.TokenReader;
 
 var builder = WebApplication.CreateBuilder(args);
 var cfg = builder.Configuration;
@@ -45,6 +47,7 @@ builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("JwtOpti
 
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.AddScoped<ITokenProvider, TokenProvider>();
+builder.Services.AddScoped<ITokenReader, TokenReader>();
 builder.Services.AddScoped<JwtOptions>();
 builder.Services.AddScoped<UsersRepository>();
 builder.Services.AddScoped<PostsRepository>();
@@ -140,8 +143,6 @@ app.MapPost("/api/refresh-tokens", async (
 {
     var refreshToken = await refreshTokensRepository.Get(refreshTokensRequest.RefreshToken);
     
-    Console.WriteLine(DateTime.UtcNow);
-    
     if (refreshToken == null || refreshToken.ExpireIn < DateTime.UtcNow)
         return Results.Problem(detail: "The refresh token has expired", statusCode:401);
 
@@ -172,10 +173,41 @@ app.MapGet("/api/users", async (
 {
     if (email != null)
         return Results.Ok(await usersRepository.GetByEmail(email));
-
+    
     return Results.Ok(await usersRepository.Get());
 }).RequireAuthorization();
+//Me GET
+app.MapGet("/api/me", async (
+    HttpContext context, 
+    UsersRepository usersRepository,
+    ITokenReader tokenReader) =>
+{
+    string? id = tokenReader.ReadToken(context.Request.Cookies["accessToken"], "Id");
 
+    if (id == null)
+        return Results.BadRequest("Invalid token data");
+
+    var user = await usersRepository.GetById(Guid.Parse(id));
+    
+    if(user == null)
+        return Results.BadRequest("User with this id does not exist");
+
+    var userInfo = new UserInfoResponse()
+    {
+        Email = user.Email,
+        Username = user.Username,
+        FirstName = user.FirstName,
+        LastName = user.LastName,
+        ProfilePicture = user.ProfilePicture,
+        Status = user.Status,
+        BirthDate = user.BirthDate,
+        Biography = user.Biography,
+        CreatedAt = user.CreatedAt,
+        IsOnline = user.IsOnline
+    };
+    
+    return Results.Ok(userInfo);
+}).RequireAuthorization();
 //Comments GET
 app.MapGet("/api/posts/comments", async (
     [FromQuery] Guid postId,

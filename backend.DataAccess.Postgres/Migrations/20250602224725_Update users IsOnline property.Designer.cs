@@ -3,6 +3,7 @@ using System;
 using DataAccess.Postgres;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace backend.DataAccess.Postgres.Migrations
 {
     [DbContext(typeof(StudentsSocialDbContext))]
-    partial class StudentsSocialDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250602224725_Update users IsOnline property")]
+    partial class UpdateusersIsOnlineproperty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

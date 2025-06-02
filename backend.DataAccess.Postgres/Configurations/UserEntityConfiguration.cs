@@ -21,7 +21,7 @@ public class UserEntityConfiguration : IEntityTypeConfiguration<UserEntity>
         builder.Property(u => u.Status).HasMaxLength(50).HasColumnName("Status");
         builder.Property(u => u.BirthDate).HasColumnType("timestamp").HasColumnName("BirthDate");
         builder.Property(u => u.Biography).HasMaxLength(255).HasColumnName("Biography");
-        builder.Property(u => u.Online).HasColumnType("boolean").HasColumnName("IsOnline");
+        builder.Property(u => u.IsOnline).HasColumnType("boolean").HasColumnName("IsOnline");
 
         builder
             .HasMany(u => u.Posts)
