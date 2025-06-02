@@ -1,0 +1,19 @@
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /app
+
+COPY backend.API/backend.API.csproj ./backend.API/
+COPY backend.DataAccess.Postgres/backend.DataAccess.Postgres.csproj ./backend.DataAccess.Postgres/
+COPY backend.Core/backend.Core.csproj ./backend.Core/
+COPY backend.Infrastructure/backend.Infrastructure.csproj ./backend.Infrastructure/
+
+RUN dotnet restore backend.API/backend.API.csproj
+
+COPY . .
+
+RUN dotnet publish backend.API/backend.API.csproj -c Release -o out
+
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
+WORKDIR /app
+COPY --from=build /app/out ./
+
+ENTRYPOINT ["dotnet", "backend.API.dll"]

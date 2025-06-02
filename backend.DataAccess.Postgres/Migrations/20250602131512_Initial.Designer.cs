@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace backend.DataAccess.Postgres.Migrations
 {
     [DbContext(typeof(StudentsSocialDbContext))]
-    [Migration("20250530151106_Update_RefreshToken")]
-    partial class Update_RefreshToken
+    [Migration("20250602131512_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -10,3 +10,4 @@ C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\refint\bac
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\backend.Core.pdb
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\ref\backend.Core.dll
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\backend.Core.csproj.AssemblyReference.cache
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Core\obj\Debug\net9.0\backend.Core.sourcelink.json

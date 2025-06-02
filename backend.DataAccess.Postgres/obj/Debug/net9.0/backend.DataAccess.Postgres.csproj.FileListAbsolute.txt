@@ -15,3 +15,4 @@ C:\Users\igorl\OneDrive\Desktop\backend\backend.DataAccess.Postgres\obj\Debug\ne
 C:\Users\igorl\OneDrive\Desktop\backend\backend.DataAccess.Postgres\obj\Debug\net9.0\backend.DataAccess.Postgres.pdb
 C:\Users\igorl\OneDrive\Desktop\backend\backend.DataAccess.Postgres\obj\Debug\net9.0\backend.DataAccess.Postgres.genruntimeconfig.cache
 C:\Users\igorl\OneDrive\Desktop\backend\backend.DataAccess.Postgres\obj\Debug\net9.0\ref\backend.DataAccess.Postgres.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.DataAccess.Postgres\obj\Debug\net9.0\backend.DataAccess.Postgres.sourcelink.json

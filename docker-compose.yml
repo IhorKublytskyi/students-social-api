@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:                              
+  db:
+    container_name: db_postgresql_container
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: arma03042003
+    ports:
+      - "5  432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  students-social-api:
+    container_name: backend-students-social-api
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+
+volumes:
+  pgdata:

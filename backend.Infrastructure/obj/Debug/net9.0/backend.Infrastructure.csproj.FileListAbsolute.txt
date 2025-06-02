@@ -25,3 +25,4 @@ C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\bin\Debug\net9.0\
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\bin\Debug\net9.0\Microsoft.AspNetCore.Http.Extensions.dll
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\bin\Debug\net9.0\backend.DataAccess.Postgres.pdb
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\obj\Debug\net9.0\backend.Infrastructure.sourcelink.json
