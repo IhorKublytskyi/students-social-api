@@ -123,7 +123,7 @@ app.MapPost("/api/login", async (
     {
         Id = Guid.NewGuid(),
         Token = tokenProvider.GenerateRefreshToken(),
-        ExpireIn = DateTime.UtcNow.AddHours(cfg.GetValue<int>("JwtOptions:RefreshTokenValidityHours")),
+        ExpireIn = DateTime.UtcNow.AddSeconds(cfg.GetValue<int>("JwtOptions:RefreshTokenValidityHours")),
         UserId = user.Id
     };
     await refreshTokensRepository.Add(refreshToken);
