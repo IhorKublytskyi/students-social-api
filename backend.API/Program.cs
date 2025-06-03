@@ -20,6 +20,7 @@ builder.Services
     {
         options.TokenValidationParameters = new TokenValidationParameters()
         {
+            ClockSkew = TimeSpan.Zero,
             ValidateLifetime = true,
             ValidateIssuer = false,
             ValidateAudience = false,
@@ -175,6 +176,7 @@ app.MapGet("/api/users", async (
     
     return Results.Ok(await usersRepository.Get());
 }).RequireAuthorization();
+
 //Me GET
 app.MapGet("/api/me", async (
     HttpContext context, 
