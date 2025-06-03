@@ -40,7 +40,7 @@ builder.Services
     });
 builder.Services.AddAuthorization();
 
-//БД
+//БДё
 builder.Services.AddDbContext<StudentsSocialDbContext>();
 
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("JwtOptions"));
@@ -124,7 +124,7 @@ app.MapPost("/api/login", async (
     {
         Id = Guid.NewGuid(),
         Token = tokenProvider.GenerateRefreshToken(),
-        ExpireIn = DateTime.UtcNow.AddSeconds(cfg.GetValue<int>("JwtOptions:RefreshTokenValidityHours")),
+        ExpireIn = DateTime.UtcNow.AddHours(cfg.GetValue<int>("JwtOptions:RefreshTokenValidityHours")),
         UserId = user.Id
     };
     await refreshTokensRepository.Add(refreshToken);
@@ -134,6 +134,12 @@ app.MapPost("/api/login", async (
 
     return Results.Ok();
 });
+
+app.MapGet("/api/logout", async (HttpContext context) =>
+{
+    context.Response.Cookies.Delete("accessToken");
+    context.Response.Cookies.Delete("refreshToken");
+}).RequireAuthorization();
 
 app.MapPost("/api/refresh-tokens", async (
     [FromBody] RefreshTokensRequest refreshTokensRequest, 
