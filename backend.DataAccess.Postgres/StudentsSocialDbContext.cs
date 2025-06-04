@@ -12,6 +12,7 @@ public class StudentsSocialDbContext : DbContext
     public DbSet<PostEntity> Posts { get; set; }
     public DbSet<CommentEntity> Comments { get; set; }
     public DbSet<RefreshTokenEntity> RefreshTokens { get; set; }
+    public DbSet<SubscriptionEntity> Subscriptions { get; set; }
     
     public StudentsSocialDbContext(IConfiguration config)
     {

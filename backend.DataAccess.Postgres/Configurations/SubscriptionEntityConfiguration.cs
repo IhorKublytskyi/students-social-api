@@ -21,7 +21,7 @@ public class SubscriptionEntityConfiguration : IEntityTypeConfiguration<Subscrip
         builder
             .HasOne(s => s.Subscriber)
             .WithMany(u => u.Subscriptions)
-            .HasForeignKey(s =>     s.SubscriberId)
+            .HasForeignKey(s => s.SubscriberId)
             .IsRequired();
     }
 }
