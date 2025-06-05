@@ -142,4 +142,3 @@ C:\Users\igorl\OneDrive\Desktop\backend\backend.API\obj\Debug\net9.0\backend.API
 C:\Users\igorl\OneDrive\Desktop\backend\backend.API\obj\Debug\net9.0\backend.API.genruntimeconfig.cache
 C:\Users\igorl\OneDrive\Desktop\backend\backend.API\obj\Debug\net9.0\ref\backend.API.dll
 C:\Users\igorl\OneDrive\Desktop\backend\backend.API\obj\Debug\net9.0\backend.API.sourcelink.json
-C:\Users\igorl\OneDrive\Desktop\backend\backend.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

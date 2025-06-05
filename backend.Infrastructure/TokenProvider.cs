@@ -37,7 +37,7 @@ public class TokenProvider : ITokenProvider
         (
             claims: claims,
             signingCredentials: signingCredentials,
-            expires: DateTime.UtcNow.AddSeconds(_options.AccessTokenValidityMins)
+            expires: DateTime.UtcNow.AddMinutes(_options.AccessTokenValidityMins)
         );
 
         var accessToken = new JwtSecurityTokenHandler().WriteToken(token);

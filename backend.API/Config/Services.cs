@@ -1,3 +1,4 @@
+using backend.Core.Interfaces;
 using backend.Infrastructure;
 using backend.Infrastructure.Interfaces;
 using DataAccess.Postgres;
@@ -18,11 +19,13 @@ public static class Services
         services.AddScoped<IPasswordHasher, PasswordHasher>();
         services.AddScoped<ITokenProvider, TokenProvider>();
         services.AddScoped<ITokenReader, TokenReader>();
+        services.AddScoped<ISubscriptionService, SubscriptionService>();
         services.AddScoped<JwtOptions>();
         services.AddScoped<UsersRepository>();
         services.AddScoped<PostsRepository>();
         services.AddScoped<CommentsRepository>();
         services.AddScoped<RefreshTokensRepository>();
+        services.AddScoped<SubscriptionsRepository>();
 
         return services;
     }
