@@ -1,4 +1,5 @@
 using backend.Infrastructure.Interfaces;
+
 namespace backend.Infrastructure;
 
 public class PasswordHasher : IPasswordHasher
