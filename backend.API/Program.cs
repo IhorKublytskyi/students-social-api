@@ -89,7 +89,7 @@ app.MapPost("/api/login", async (
     context.Response.Cookies.Append("accessToken", accessToken);
     context.Response.Cookies.Append("refreshToken", refreshToken.Token);
 
-    return Results.Ok(refreshToken);
+    return Results.Ok(refreshToken.Token);
 });
 
 app.MapGet("/api/logout", async (HttpContext context) =>
@@ -99,12 +99,11 @@ app.MapGet("/api/logout", async (HttpContext context) =>
 }).RequireAuthorization();
 
 app.MapPost("/api/refresh-tokens", async (
-    [FromBody] RefreshTokensRequest refreshTokensRequest, 
     RefreshTokensRepository refreshTokensRepository,
     ITokenProvider tokenProvider,
     HttpContext context) =>
 {
-    var refreshToken = await refreshTokensRepository.Get(refreshTokensRequest.RefreshToken);
+    var refreshToken = await refreshTokensRepository.Get(context.Request.Cookies["refreshToken"]);
     
     if (refreshToken == null || refreshToken.ExpireIn < DateTime.UtcNow)
         return Results.Problem(detail: "The refresh token has expired", statusCode:401);
