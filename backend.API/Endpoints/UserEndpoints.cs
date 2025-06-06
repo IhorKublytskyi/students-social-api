@@ -35,6 +35,7 @@ public static class UserEndpoints
         //Users subscribe POST
         userGroup.MapPost("/subscribe", async (
             [FromQuery] string subscribedUsername,
+            [FromQuery] bool toCheck,
             ITokenReader tokenReader,
             HttpContext context,
             ISubscriptionService subscriptionService
@@ -43,6 +44,13 @@ public static class UserEndpoints
             var accessToken = context.Request.Cookies["accessToken"];
             var subscriberUsername = tokenReader.ReadToken(accessToken, "Username");
 
+            if (toCheck)
+            {
+                var isSubscribed = await subscriptionService.CheckSubscriptionAsync(subscriberUsername, subscribedUsername);
+
+                return isSubscribed.IsSuccess ? Results.Ok(isSubscribed.Value) : Results.BadRequest(isSubscribed.Error);
+            }
+            
             var result = await subscriptionService.SubscribeAsync(subscriberUsername, subscribedUsername);
 
             return result.IsSuccess ? Results.Ok() : Results.BadRequest(result.Error);

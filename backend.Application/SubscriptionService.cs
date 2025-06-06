@@ -17,9 +17,6 @@ public class SubscriptionService : ISubscriptionService
 
     private async Task<Result> HandleSubscription(string subscriberUsername, string subscribedUsername, bool isSubscribing)
     {
-        if (subscriberUsername == null)
-            return Result.Failure("Subscriber username is required");
-
         var subscriber = await _usersRepository.GetByUsername(subscriberUsername);
         if (subscriber == null)
             return Result.Failure("Subscriber not found");
@@ -54,6 +51,22 @@ public class SubscriptionService : ISubscriptionService
         }
     }
 
+    public async Task<Result<bool>> CheckSubscriptionAsync(string subscriberUsername, string subscribedUsername)
+    {
+        var subscriber = await _usersRepository.GetByUsername(subscriberUsername);
+        if(subscriber == null)
+            return Result<bool>.Failure("Subscriber not found");
+
+        var subscribed = await _usersRepository.GetByUsername(subscribedUsername);
+        if(subscribed == null)
+            return Result<bool>.Failure("User to subscribe not found");
+
+        var subscription = await _subscriptionsRepository.Get(subscriber.Id, subscribed.Id);
+        if(subscription == null)
+            return Result<bool>.Success(false);
+        
+        return Result<bool>.Success(true);
+    }
     public async Task<Result> SubscribeAsync(string subscriberUsername, string subscribedUsername)
     {
         return await HandleSubscription(subscriberUsername, subscribedUsername, isSubscribing: true);

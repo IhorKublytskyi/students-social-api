@@ -13,6 +13,13 @@ public class SubscriptionsRepository : ISubscriptionsRepository
         this._dbContext = _dbContext;
     }
 
+    public async Task<SubscriptionEntity?> Get(Guid subscriberId, Guid subscribedId)
+    {
+        return await _dbContext.Subscriptions
+            .AsNoTracking()
+            .FirstOrDefaultAsync(s => s.SubscriberId == subscriberId && s.SubscribedToId == subscribedId);
+    }
+
     public async Task Add(SubscriptionEntity subscription)
     {
         await _dbContext.Subscriptions.AddAsync(subscription);
