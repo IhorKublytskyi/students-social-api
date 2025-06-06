@@ -1,11 +1,7 @@
-using backend.Core.Entities;
 using backend.Core.Interfaces;
-using backend.Infrastructure.Exceptions;
-using backend.Infrastructure.Interfaces;
-using DataAccess.Postgres;
-using DataAccess.Postgres.Repositories;
+using backend.Core.Interfaces.Repositories;
+using Persistence.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace backend.API.Endpoints;
 
@@ -18,7 +14,7 @@ public static class UserEndpoints
         //Users GET
         userGroup.MapGet("/", async (
             [FromQuery] string? username, 
-            UsersRepository usersRepository) =>
+            IUsersRepository usersRepository) =>
         {
             if (username != null)
             {
@@ -47,16 +43,9 @@ public static class UserEndpoints
             var accessToken = context.Request.Cookies["accessToken"];
             var subscriberUsername = tokenReader.ReadToken(accessToken, "Username");
 
-            try
-            {
-                string message = await subscriptionService.SubscribeAsync(subscriberUsername, subscribedUsername);
+            var result = await subscriptionService.SubscribeAsync(subscriberUsername, subscribedUsername);
 
-                return Results.Ok(message);
-            }
-            catch (Exception e)
-            {
-                return Results.BadRequest(e.Message);
-            }
+            return result.IsSuccess ? Results.Ok() : Results.BadRequest(result.Error);
 
         }).RequireAuthorization();
 
@@ -70,17 +59,9 @@ public static class UserEndpoints
             var accessToken = context.Request.Cookies["accessToken"];
             var subscriberUsername = tokenReader.ReadToken(accessToken, "Username");
 
-            try
-            {
-                string message = await subscriptionService.UnsubscribeAsync(subscriberUsername, subscribedUsername);
+            var result = await subscriptionService.UnsubscribeAsync(subscriberUsername, subscribedUsername);
 
-                return Results.Ok(message);
-            }
-            catch (Exception e)
-            {
-                return Results.BadRequest(e.Message);
-            }
-
+            return result.IsSuccess ? Results.Ok() : Results.BadRequest(result.Error);
         }).RequireAuthorization();
     }
 }

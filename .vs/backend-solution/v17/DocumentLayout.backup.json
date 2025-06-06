@@ -3,43 +3,274 @@
   "WorkspaceRootPath": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\backend.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\backend.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\backend.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\backend.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\backend.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\backend.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE41B807-FDDE-1005-FA7E-8BFDCA5B8ED9}|backend.DataAccess.Postgres\\backend.DataAccess.Postgres.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.dataaccess.postgres\\backend.dataaccess.postgres.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AE41B807-FDDE-1005-FA7E-8BFDCA5B8ED9}|backend.DataAccess.Postgres\\backend.DataAccess.Postgres.csproj|solutionrelative:backend.dataaccess.postgres\\backend.dataaccess.postgres.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\tokenreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\tokenreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4450185B-F14C-4C6A-A545-7049217B4E4B}|backend.Application\\backend.Application.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.application\\backend.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4450185B-F14C-4C6A-A545-7049217B4E4B}|backend.Application\\backend.Application.csproj|solutionrelative:backend.application\\backend.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE41B807-FDDE-1005-FA7E-8BFDCA5B8ED9}|backend.DataAccess.Postgres\\backend.DataAccess.Postgres.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.dataaccess.postgres\\studentssocialdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE41B807-FDDE-1005-FA7E-8BFDCA5B8ED9}|backend.DataAccess.Postgres\\backend.DataAccess.Postgres.csproj|solutionrelative:backend.dataaccess.postgres\\studentssocialdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\backend.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\backend.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4450185B-F14C-4C6A-A545-7049217B4E4B}|backend.Application\\backend.Application.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.application\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4450185B-F14C-4C6A-A545-7049217B4E4B}|backend.Application\\backend.Application.csproj|solutionrelative:backend.application\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.persistence\\repositories\\commentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|solutionrelative:backend.persistence\\repositories\\commentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.persistence\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|solutionrelative:backend.persistence\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\interfaces\\repositories\\icommentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\interfaces\\repositories\\icommentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.persistence\\repositories\\postsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|solutionrelative:backend.persistence\\repositories\\postsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.persistence\\repositories\\refreshtokensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|solutionrelative:backend.persistence\\repositories\\refreshtokensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\interfaces\\repositories\\irefreshtokensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\interfaces\\repositories\\irefreshtokensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\interfaces\\repositories\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\interfaces\\repositories\\iusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\interfaces\\repositories\\ipostsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\interfaces\\repositories\\ipostsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\interfaces\\repositories\\isubscriptionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\interfaces\\repositories\\isubscriptionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\interfaces\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\interfaces\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.persistence\\repositories\\subscriptionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|solutionrelative:backend.persistence\\repositories\\subscriptionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.persistence\\backend.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|solutionrelative:backend.persistence\\backend.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\exceptions\\useralreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\exceptions\\useralreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\exceptions\\subscriptionnotexistexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\exceptions\\subscriptionnotexistexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\interfaces\\itokenreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\interfaces\\itokenreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\config\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\config\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\entities\\intermediateentities\\posttagentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\entities\\intermediateentities\\posttagentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\tokenreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\tokenreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\tokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\tokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\interfaces\\itokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\interfaces\\itokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\interfaces\\isubscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\interfaces\\isubscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\entities\\intermediateentities\\favouritepostentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\entities\\intermediateentities\\favouritepostentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\entities\\intermediateentities\\closefriendentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\entities\\intermediateentities\\closefriendentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\models\\responsemodels\\userinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\models\\responsemodels\\userinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\models\\responsemodels\\postsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\models\\responsemodels\\postsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\models\\responsemodels\\commentsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\models\\responsemodels\\commentsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\models\\requestmodels\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\models\\requestmodels\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\models\\requestmodels\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\models\\requestmodels\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\models\\requestmodels\\createpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\models\\requestmodels\\createpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\endpoints\\postendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\endpoints\\postendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\config\\jwtauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\config\\jwtauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\config\\endpointsmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\config\\endpointsmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\backend.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\backend.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\StudentsSocialDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Migrations\\StudentsSocialDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\PostsRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Repositories\\PostsRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\CommentsRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Repositories\\CommentsRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\RefreshTokensRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Repositories\\RefreshTokensRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\SubscriptionsRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Repositories\\SubscriptionsRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\UsersRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Repositories\\UsersRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\StudentsSocialDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\StudentsSocialDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\VideoEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\VideoEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\UserEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\UserEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\SubscriptionEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\SubscriptionEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\ReplyEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\ReplyEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\RefreshTokenConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\RefreshTokenConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\PostTagEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\PostTagEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\LikePostEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\LikePostEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\PostEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\PostEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\LikeCommentEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\LikeCommentEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\ImageEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\ImageEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\FavouritePostEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\FavouritePostEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\CommentEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\CommentEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\CloseFriendEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend.DataAccess.Postgres\\Configurations\\CloseFriendEntityConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,63 +280,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAHIJAAAAAAAAAAAkwHcJAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-06-05T17:08:15.558Z",
+              "DocumentIndex": 6,
+              "Title": "CommentsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\CommentsRepository.cs",
+              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\CommentsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\CommentsRepository.cs",
+              "RelativeToolTip": "backend.Persistence\\Repositories\\CommentsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:41:21.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "backend.Core",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\backend.Core.csproj",
-              "RelativeDocumentMoniker": "backend.Core\\backend.Core.csproj",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\backend.Core.csproj",
-              "RelativeToolTip": "backend.Core\\backend.Core.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-05T17:06:05.65Z",
+              "DocumentIndex": 7,
+              "Title": "UsersRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\UsersRepository.cs",
+              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\UsersRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\UsersRepository.cs",
+              "RelativeToolTip": "backend.Persistence\\Repositories\\UsersRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:39:17.359Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "SubscriptionService.cs",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\SubscriptionService.cs",
-              "RelativeDocumentMoniker": "backend.Infrastructure\\SubscriptionService.cs",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\SubscriptionService.cs",
-              "RelativeToolTip": "backend.Infrastructure\\SubscriptionService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAEAAAAaAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Application\\SubscriptionService.cs",
+              "RelativeDocumentMoniker": "backend.Application\\SubscriptionService.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Application\\SubscriptionService.cs",
+              "RelativeToolTip": "backend.Application\\SubscriptionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T17:05:46.601Z",
+              "WhenOpened": "2025-06-06T09:33:27.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "backend.Infrastructure\\PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\PasswordHasher.cs",
-              "RelativeToolTip": "backend.Infrastructure\\PasswordHasher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T17:05:44.89Z",
+              "DocumentIndex": 4,
+              "Title": "backend.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\backend.Core.csproj",
+              "RelativeDocumentMoniker": "backend.Core\\backend.Core.csproj",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\backend.Core.csproj",
+              "RelativeToolTip": "backend.Core\\backend.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-05T17:06:05.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "backend.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\backend.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "backend.Infrastructure\\backend.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\backend.Infrastructure.csproj",
+              "RelativeToolTip": "backend.Infrastructure\\backend.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-05T17:04:48.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "JwtOptions.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\JwtOptions.cs",
               "RelativeDocumentMoniker": "backend.Infrastructure\\JwtOptions.cs",
@@ -118,68 +362,741 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TokenReader.cs",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\TokenReader.cs",
-              "RelativeDocumentMoniker": "backend.Infrastructure\\TokenReader.cs",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\TokenReader.cs",
-              "RelativeToolTip": "backend.Infrastructure\\TokenReader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T17:05:40.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "backend.Infrastructure",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\backend.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "backend.Infrastructure\\backend.Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\backend.Infrastructure.csproj",
-              "RelativeToolTip": "backend.Infrastructure\\backend.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-05T17:04:48.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "backend.DataAccess.Postgres",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\backend.DataAccess.Postgres.csproj",
-              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\backend.DataAccess.Postgres.csproj",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\backend.DataAccess.Postgres.csproj",
-              "RelativeToolTip": "backend.DataAccess.Postgres\\backend.DataAccess.Postgres.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-05T17:04:47.146Z",
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "backend.Infrastructure\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\PasswordHasher.cs",
+              "RelativeToolTip": "backend.Infrastructure\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:05:44.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "backend.API",
+              "Title": "backend.Application",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Application\\backend.Application.csproj",
+              "RelativeDocumentMoniker": "backend.Application\\backend.Application.csproj",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Application\\backend.Application.csproj",
+              "RelativeToolTip": "backend.Application\\backend.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-06T09:35:43.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ICommentsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\ICommentsRepository.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Interfaces\\Repositories\\ICommentsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\ICommentsRepository.cs",
+              "RelativeToolTip": "backend.Core\\Interfaces\\Repositories\\ICommentsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:43:18.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PostsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\PostsRepository.cs",
+              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\PostsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\PostsRepository.cs",
+              "RelativeToolTip": "backend.Persistence\\Repositories\\PostsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:41:22.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RefreshTokensRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\RefreshTokensRepository.cs",
+              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\RefreshTokensRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\RefreshTokensRepository.cs",
+              "RelativeToolTip": "backend.Persistence\\Repositories\\RefreshTokensRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:41:23.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRefreshTokensRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\IRefreshTokensRepository.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Interfaces\\Repositories\\IRefreshTokensRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\IRefreshTokensRepository.cs",
+              "RelativeToolTip": "backend.Core\\Interfaces\\Repositories\\IRefreshTokensRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:42:44.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IUsersRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\IUsersRepository.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Interfaces\\Repositories\\IUsersRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\IUsersRepository.cs",
+              "RelativeToolTip": "backend.Core\\Interfaces\\Repositories\\IUsersRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:39:58.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IPostsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\IPostsRepository.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Interfaces\\Repositories\\IPostsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\IPostsRepository.cs",
+              "RelativeToolTip": "backend.Core\\Interfaces\\Repositories\\IPostsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:42:08.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ISubscriptionsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\ISubscriptionsRepository.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Interfaces\\Repositories\\ISubscriptionsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\ISubscriptionsRepository.cs",
+              "RelativeToolTip": "backend.Core\\Interfaces\\Repositories\\ISubscriptionsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:43:06.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\IPasswordHasher.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Interfaces\\IPasswordHasher.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\IPasswordHasher.cs",
+              "RelativeToolTip": "backend.Core\\Interfaces\\IPasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:53.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SubscriptionsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
+              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
+              "RelativeToolTip": "backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:41:19.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "backend.Persistence",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\backend.Persistence.csproj",
+              "RelativeDocumentMoniker": "backend.Persistence\\backend.Persistence.csproj",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\backend.Persistence.csproj",
+              "RelativeToolTip": "backend.Persistence\\backend.Persistence.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-06T09:39:12.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Exceptions\\UserNotFoundException.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Exceptions\\UserNotFoundException.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Exceptions\\UserNotFoundException.cs",
+              "RelativeToolTip": "backend.Core\\Exceptions\\UserNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:37:08.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserAlreadyExistsException.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Exceptions\\UserAlreadyExistsException.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Exceptions\\UserAlreadyExistsException.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Exceptions\\UserAlreadyExistsException.cs",
+              "RelativeToolTip": "backend.Core\\Exceptions\\UserAlreadyExistsException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:37:06.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SubscriptionNotExistException.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Exceptions\\SubscriptionNotExistException.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Exceptions\\SubscriptionNotExistException.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Exceptions\\SubscriptionNotExistException.cs",
+              "RelativeToolTip": "backend.Core\\Exceptions\\SubscriptionNotExistException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:36:59.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TokenReader.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\TokenReader.cs",
+              "RelativeDocumentMoniker": "backend.Infrastructure\\TokenReader.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\TokenReader.cs",
+              "RelativeToolTip": "backend.Infrastructure\\TokenReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:05:40.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PostTagEntity.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Entities\\IntermediateEntities\\PostTagEntity.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Entities\\IntermediateEntities\\PostTagEntity.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Entities\\IntermediateEntities\\PostTagEntity.cs",
+              "RelativeToolTip": "backend.Core\\Entities\\IntermediateEntities\\PostTagEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:50.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Program.cs",
+              "RelativeDocumentMoniker": "backend.API\\Program.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Program.cs",
+              "RelativeToolTip": "backend.API\\Program.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:38:17.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\UserEndpoints.cs",
+              "RelativeDocumentMoniker": "backend.API\\Endpoints\\UserEndpoints.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\UserEndpoints.cs",
+              "RelativeToolTip": "backend.API\\Endpoints\\UserEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:07.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Services.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Config\\Services.cs",
+              "RelativeDocumentMoniker": "backend.API\\Config\\Services.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Config\\Services.cs",
+              "RelativeToolTip": "backend.API\\Config\\Services.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:38:38.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ITokenReader.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\ITokenReader.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Interfaces\\ITokenReader.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\ITokenReader.cs",
+              "RelativeToolTip": "backend.Core\\Interfaces\\ITokenReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:40:08.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TokenProvider.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\TokenProvider.cs",
+              "RelativeDocumentMoniker": "backend.Infrastructure\\TokenProvider.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\TokenProvider.cs",
+              "RelativeToolTip": "backend.Infrastructure\\TokenProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:40:42.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ITokenProvider.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\ITokenProvider.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Interfaces\\ITokenProvider.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\ITokenProvider.cs",
+              "RelativeToolTip": "backend.Core\\Interfaces\\ITokenProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:54.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ISubscriptionService.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\ISubscriptionService.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Interfaces\\ISubscriptionService.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\ISubscriptionService.cs",
+              "RelativeToolTip": "backend.Core\\Interfaces\\ISubscriptionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:52.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FavouritePostEntity.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Entities\\IntermediateEntities\\FavouritePostEntity.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Entities\\IntermediateEntities\\FavouritePostEntity.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Entities\\IntermediateEntities\\FavouritePostEntity.cs",
+              "RelativeToolTip": "backend.Core\\Entities\\IntermediateEntities\\FavouritePostEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:48.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CloseFriendEntity.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Entities\\IntermediateEntities\\CloseFriendEntity.cs",
+              "RelativeDocumentMoniker": "backend.Core\\Entities\\IntermediateEntities\\CloseFriendEntity.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Entities\\IntermediateEntities\\CloseFriendEntity.cs",
+              "RelativeToolTip": "backend.Core\\Entities\\IntermediateEntities\\CloseFriendEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:47.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UserInfoResponse.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\ResponseModels\\UserInfoResponse.cs",
+              "RelativeDocumentMoniker": "backend.API\\Models\\ResponseModels\\UserInfoResponse.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\ResponseModels\\UserInfoResponse.cs",
+              "RelativeToolTip": "backend.API\\Models\\ResponseModels\\UserInfoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:39.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PostsResponse.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\ResponseModels\\PostsResponse.cs",
+              "RelativeDocumentMoniker": "backend.API\\Models\\ResponseModels\\PostsResponse.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\ResponseModels\\PostsResponse.cs",
+              "RelativeToolTip": "backend.API\\Models\\ResponseModels\\PostsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:39.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CommentsResponse.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\ResponseModels\\CommentsResponse.cs",
+              "RelativeDocumentMoniker": "backend.API\\Models\\ResponseModels\\CommentsResponse.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\ResponseModels\\CommentsResponse.cs",
+              "RelativeToolTip": "backend.API\\Models\\ResponseModels\\CommentsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:38.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\RequestModels\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "backend.API\\Models\\RequestModels\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\RequestModels\\RegisterRequest.cs",
+              "RelativeToolTip": "backend.API\\Models\\RequestModels\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:36.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\RequestModels\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "backend.API\\Models\\RequestModels\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\RequestModels\\LoginRequest.cs",
+              "RelativeToolTip": "backend.API\\Models\\RequestModels\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:35.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CreatePostRequest.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\RequestModels\\CreatePostRequest.cs",
+              "RelativeDocumentMoniker": "backend.API\\Models\\RequestModels\\CreatePostRequest.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\RequestModels\\CreatePostRequest.cs",
+              "RelativeToolTip": "backend.API\\Models\\RequestModels\\CreatePostRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:34.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PostEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\PostEndpoints.cs",
+              "RelativeDocumentMoniker": "backend.API\\Endpoints\\PostEndpoints.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\PostEndpoints.cs",
+              "RelativeToolTip": "backend.API\\Endpoints\\PostEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:02.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "JwtAuthentication.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Config\\JwtAuthentication.cs",
+              "RelativeDocumentMoniker": "backend.API\\Config\\JwtAuthentication.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Config\\JwtAuthentication.cs",
+              "RelativeToolTip": "backend.API\\Config\\JwtAuthentication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:38:36.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EndpointsMapper.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Config\\EndpointsMapper.cs",
+              "RelativeDocumentMoniker": "backend.API\\Config\\EndpointsMapper.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Config\\EndpointsMapper.cs",
+              "RelativeToolTip": "backend.API\\Config\\EndpointsMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:38:35.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "ViewState": "AgIAACgAAAAAAAAAAAAvwDUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-06T08:31:48.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20250602131512_Initial.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.Designer.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.Designer.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.Designer.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.Designer.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:24:01.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "backend.API.csproj",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\backend.API.csproj",
               "RelativeDocumentMoniker": "backend.API\\backend.API.csproj",
               "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\backend.API.csproj",
               "RelativeToolTip": "backend.API\\backend.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-06-05T17:04:36.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 44,
+              "Title": "20250602224725_Update users IsOnline property.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.Designer.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.Designer.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.Designer.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.Designer.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:24:34.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "StudentsSocialDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\StudentsSocialDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Migrations\\StudentsSocialDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\StudentsSocialDbContextModelSnapshot.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Migrations\\StudentsSocialDbContextModelSnapshot.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:22:15.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PostsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\PostsRepository.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Repositories\\PostsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\PostsRepository.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Repositories\\PostsRepository.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:22:35.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "CommentsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\CommentsRepository.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Repositories\\CommentsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\CommentsRepository.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Repositories\\CommentsRepository.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:22:22.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "RefreshTokensRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\RefreshTokensRepository.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Repositories\\RefreshTokensRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\RefreshTokensRepository.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Repositories\\RefreshTokensRepository.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:22:40.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "SubscriptionsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\SubscriptionsRepository.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Repositories\\SubscriptionsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\SubscriptionsRepository.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Repositories\\SubscriptionsRepository.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:22:43.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "UsersRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\UsersRepository.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Repositories\\UsersRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Repositories\\UsersRepository.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Repositories\\UsersRepository.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:22:49.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20250602224725_Update users IsOnline property.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Migrations\\20250602224725_Update users IsOnline property.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:22:11.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
               "Title": "StudentsSocialDbContext.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\StudentsSocialDbContext.cs",
               "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\StudentsSocialDbContext.cs",
               "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\StudentsSocialDbContext.cs",
               "RelativeToolTip": "backend.DataAccess.Postgres\\StudentsSocialDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T17:05:41.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T17:05:41.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "20250602131512_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Migrations\\20250602131512_Initial.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:22:01.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "VideoEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\VideoEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\VideoEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\VideoEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\VideoEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:56.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "UserEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\UserEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\UserEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\UserEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\UserEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:52.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "SubscriptionEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\SubscriptionEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\SubscriptionEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\SubscriptionEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\SubscriptionEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:45.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ReplyEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\ReplyEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\ReplyEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\ReplyEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\ReplyEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:43.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "RefreshTokenConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\RefreshTokenConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\RefreshTokenConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\RefreshTokenConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\RefreshTokenConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:41.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "PostTagEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\PostTagEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\PostTagEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\PostTagEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\PostTagEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:39.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "LikePostEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\LikePostEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\LikePostEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\LikePostEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\LikePostEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:37.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "PostEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\PostEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\PostEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\PostEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\PostEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:35.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "LikeCommentEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\LikeCommentEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\LikeCommentEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\LikeCommentEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\LikeCommentEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:33.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "ImageEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\ImageEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\ImageEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\ImageEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\ImageEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:31.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "FavouritePostEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\FavouritePostEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\FavouritePostEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\FavouritePostEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\FavouritePostEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:27.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "CommentEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\CommentEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\CommentEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\CommentEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\CommentEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:21:22.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "CloseFriendEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\CloseFriendEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "backend.DataAccess.Postgres\\Configurations\\CloseFriendEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\Configurations\\CloseFriendEntityConfiguration.cs",
+              "RelativeToolTip": "backend.DataAccess.Postgres\\Configurations\\CloseFriendEntityConfiguration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:20:52.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAHIJAAAAAAAAAAAkwHcJAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-05T17:08:15.558Z"
             }
           ]
         }

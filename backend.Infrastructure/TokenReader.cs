@@ -1,5 +1,5 @@
 using System.IdentityModel.Tokens.Jwt;
-using backend.Infrastructure.Interfaces;
+using backend.Core.Interfaces;
 
 namespace backend.Infrastructure;
 

@@ -1,7 +1,8 @@
 using backend.API.RequestModels;
 using backend.API.ResponseModels;
 using backend.Core.Entities;
-using DataAccess.Postgres.Repositories;
+using backend.Core.Interfaces.Repositories;
+using Persistence.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend.API.Endpoints;
@@ -15,7 +16,7 @@ public static class PostEndpoints
         //Post`s comments GET
         postGroup.MapGet("/comments", async (
             [FromQuery] Guid postId,
-            CommentsRepository commentsRepository) =>
+            ICommentsRepository commentsRepository) =>
         {
             var comments = await commentsRepository.GetByPostId(postId);
 
@@ -30,7 +31,7 @@ public static class PostEndpoints
         //Posts GET
         postGroup.MapGet("/", async (
             [FromQuery] Guid? userId, 
-            PostsRepository postsRepository) =>
+            IPostsRepository postsRepository) =>
         {
             if (userId != null)
             {
@@ -56,9 +57,9 @@ public static class PostEndpoints
         
         //Posts POST
         postGroup.MapPost("/", async (
-            UsersRepository usersRepository, 
+            IUsersRepository usersRepository, 
             CreatePostRequest createPostData, 
-            PostsRepository postsRepository) =>
+            IPostsRepository postsRepository) =>
         {
             var user = await usersRepository.GetByEmail(createPostData.UserEmail);
 

@@ -1,4 +1,4 @@
-using backend.Infrastructure.Interfaces;
+using backend.Core.Interfaces;
 
 namespace backend.Infrastructure;
 

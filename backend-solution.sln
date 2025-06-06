@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.API", "backend.API\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.Core", "backend.Core\backend.Core.csproj", "{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.DataAccess.Postgres", "backend.DataAccess.Postgres\backend.DataAccess.Postgres.csproj", "{AE41B807-FDDE-1005-FA7E-8BFDCA5B8ED9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.Infrastructure", "backend.Infrastructure\backend.Infrastructure.csproj", "{20D4AB54-7165-F92E-5417-8419E58E72CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
@@ -16,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		docker-compose.yml = docker-compose.yml
 		Dockerfile = Dockerfile
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.Persistence", "backend.Persistence\backend.Persistence.csproj", "{BD221718-02C0-420A-A9F7-53A769C01576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.Application", "backend.Application\backend.Application.csproj", "{4450185B-F14C-4C6A-A545-7049217B4E4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +33,18 @@ Global
 		{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE41B807-FDDE-1005-FA7E-8BFDCA5B8ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE41B807-FDDE-1005-FA7E-8BFDCA5B8ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE41B807-FDDE-1005-FA7E-8BFDCA5B8ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE41B807-FDDE-1005-FA7E-8BFDCA5B8ED9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20D4AB54-7165-F92E-5417-8419E58E72CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20D4AB54-7165-F92E-5417-8419E58E72CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20D4AB54-7165-F92E-5417-8419E58E72CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20D4AB54-7165-F92E-5417-8419E58E72CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD221718-02C0-420A-A9F7-53A769C01576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD221718-02C0-420A-A9F7-53A769C01576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD221718-02C0-420A-A9F7-53A769C01576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD221718-02C0-420A-A9F7-53A769C01576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4450185B-F14C-4C6A-A545-7049217B4E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4450185B-F14C-4C6A-A545-7049217B4E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4450185B-F14C-4C6A-A545-7049217B4E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4450185B-F14C-4C6A-A545-7049217B4E4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

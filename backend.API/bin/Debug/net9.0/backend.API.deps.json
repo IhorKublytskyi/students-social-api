@@ -10,8 +10,10 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.5",
-          "backend.DataAccess.Postgres": "1.0.0",
-          "backend.Infrastructure": "1.0.0"
+          "backend.Application": "1.0.0",
+          "backend.Core": "1.0.0",
+          "backend.Infrastructure": "1.0.0",
+          "backend.Persistence": "1.0.0"
         },
         "runtime": {
           "backend.API.dll": {}
@@ -709,24 +711,23 @@
         }
       },
       "System.Threading.Channels/7.0.0": {},
+      "backend.Application/1.0.0": {
+        "dependencies": {
+          "backend.Core": "1.0.0"
+        },
+        "runtime": {
+          "backend.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "backend.Core/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.5"
         },
         "runtime": {
           "backend.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "backend.DataAccess.Postgres/1.0.0": {
-        "dependencies": {
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
-          "backend.Core": "1.0.0"
-        },
-        "runtime": {
-          "backend.DataAccess.Postgres.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -739,11 +740,22 @@
           "Microsoft.Extensions.Options": "9.0.5",
           "Microsoft.IdentityModel.Tokens": "8.0.1",
           "System.IdentityModel.Tokens.Jwt": "8.0.1",
-          "backend.Core": "1.0.0",
-          "backend.DataAccess.Postgres": "1.0.0"
+          "backend.Core": "1.0.0"
         },
         "runtime": {
           "backend.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "backend.Persistence/1.0.0": {
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "backend.Core": "1.0.0"
+        },
+        "runtime": {
+          "backend.Persistence.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1114,17 +1126,22 @@
       "path": "system.threading.channels/7.0.0",
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
+    "backend.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "backend.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "backend.DataAccess.Postgres/1.0.0": {
+    "backend.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "backend.Infrastructure/1.0.0": {
+    "backend.Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

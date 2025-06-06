@@ -1,11 +1,12 @@
 using backend.API.RequestModels;
 using backend.API.ResponseModels;
 using backend.Core.Entities;
-using backend.Infrastructure.Interfaces;
-using DataAccess.Postgres.Repositories;
+using backend.Core.Interfaces;
+using Persistence.Repositories;
 using Microsoft.AspNetCore.CookiePolicy;
 using Microsoft.AspNetCore.Mvc;
 using backend.API.Extensions;
+using backend.Core.Interfaces.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,44 +27,22 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapPost("/api/register", async (
-    RegisterRequest registerData, 
-    IPasswordHasher passwordHasher, 
-    UsersRepository usersRepository) =>
+    RegisterRequest request, 
+    IRegistrationService service) =>
 {
-    var user = await usersRepository.GetByEmail(registerData.Email);
+    var result = await service.Register(request.FirstName, request.LastName, request.Username, request.Email, DateTime.Parse(request.BirthDate), 
+        request.Password);
 
-    if (await usersRepository.ExistsByUsername(registerData.Username))
-    {
-        return Results.BadRequest("This username is already taken");
-    }
-    if (user != null)
-    {
-        return Results.BadRequest("This e-mail is already taken");
-    }
-    
-    user = new UserEntity()
-    {
-        Id = Guid.NewGuid(),
-        Email = registerData.Email,
-        PasswordHash = passwordHasher.HashPassword(registerData.Password),
-        Username = registerData.Username,
-        FirstName = registerData.FirstName,
-        LastName = registerData.LastName,
-        BirthDate = DateTime.Parse(registerData.BirthDate),
-        CreatedAt = DateTime.UtcNow
-    };
-    await usersRepository.Add(user);
-    
-    return Results.Created("/api/register", "You have successfully registered");
+    return result.IsSuccess ? Results.Ok() : Results.BadRequest(result.Error);
 });
 
 app.MapPost("/api/login", async (
     [FromBody] LoginRequest loginData, 
-    UsersRepository usersRepository,
+    IUsersRepository usersRepository,
     IPasswordHasher passwordHasher,
     ITokenProvider tokenProvider,
     HttpContext context,
-    RefreshTokensRepository refreshTokensRepository) =>
+    IRefreshTokensRepository refreshTokensRepository) =>
 {
     var user = await usersRepository.GetByEmail(loginData.Email);
     if (user == null)
@@ -99,7 +78,7 @@ app.MapGet("/api/logout", async (HttpContext context) =>
 }).RequireAuthorization();
 
 app.MapPost("/api/refresh-tokens", async (
-    RefreshTokensRepository refreshTokensRepository,
+    IRefreshTokensRepository refreshTokensRepository,
     ITokenProvider tokenProvider,
     HttpContext context) =>
 {
@@ -131,7 +110,7 @@ app.MapPost("/api/refresh-tokens", async (
 //Me GET
 app.MapGet("/api/me", async (
     HttpContext context, 
-    UsersRepository usersRepository,
+    IUsersRepository usersRepository,
     ITokenReader tokenReader) =>
 {
     string? id = tokenReader.ReadToken(context.Request.Cookies["accessToken"], "Id");

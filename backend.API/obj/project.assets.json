@@ -1061,6 +1061,19 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "backend.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "backend.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/backend.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/backend.Application.dll": {}
+        }
+      },
       "backend.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1074,20 +1087,6 @@
           "bin/placeholder/backend.Core.dll": {}
         }
       },
-      "backend.DataAccess.Postgres/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
-          "backend.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/backend.DataAccess.Postgres.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/backend.DataAccess.Postgres.dll": {}
-        }
-      },
       "backend.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1097,14 +1096,27 @@
           "Microsoft.Extensions.Options": "9.0.5",
           "Microsoft.IdentityModel.Tokens": "8.0.1",
           "System.IdentityModel.Tokens.Jwt": "8.0.1",
-          "backend.Core": "1.0.0",
-          "backend.DataAccess.Postgres": "1.0.0"
+          "backend.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/backend.Infrastructure.dll": {}
         },
         "runtime": {
           "bin/placeholder/backend.Infrastructure.dll": {}
+        }
+      },
+      "backend.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "backend.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/backend.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/backend.Persistence.dll": {}
         }
       }
     }
@@ -3202,28 +3214,35 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "backend.Application/1.0.0": {
+      "type": "project",
+      "path": "../backend.Application/backend.Application.csproj",
+      "msbuildProject": "../backend.Application/backend.Application.csproj"
+    },
     "backend.Core/1.0.0": {
       "type": "project",
       "path": "../backend.Core/backend.Core.csproj",
       "msbuildProject": "../backend.Core/backend.Core.csproj"
     },
-    "backend.DataAccess.Postgres/1.0.0": {
-      "type": "project",
-      "path": "../backend.DataAccess.Postgres/backend.DataAccess.Postgres.csproj",
-      "msbuildProject": "../backend.DataAccess.Postgres/backend.DataAccess.Postgres.csproj"
-    },
     "backend.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../backend.Infrastructure/backend.Infrastructure.csproj",
       "msbuildProject": "../backend.Infrastructure/backend.Infrastructure.csproj"
+    },
+    "backend.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../backend.Persistence/backend.Persistence.csproj",
+      "msbuildProject": "../backend.Persistence/backend.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.5",
-      "backend.DataAccess.Postgres >= 1.0.0",
-      "backend.Infrastructure >= 1.0.0"
+      "backend.Application >= 1.0.0",
+      "backend.Core >= 1.0.0",
+      "backend.Infrastructure >= 1.0.0",
+      "backend.Persistence >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3258,11 +3277,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\backend.DataAccess.Postgres.csproj": {
-              "projectPath": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.DataAccess.Postgres\\backend.DataAccess.Postgres.csproj"
+            "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Application\\backend.Application.csproj": {
+              "projectPath": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Application\\backend.Application.csproj"
+            },
+            "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\backend.Core.csproj": {
+              "projectPath": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\backend.Core.csproj"
             },
             "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\backend.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\backend.Infrastructure.csproj"
+            },
+            "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\backend.Persistence.csproj": {
+              "projectPath": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\backend.Persistence.csproj"
             }
           }
         }

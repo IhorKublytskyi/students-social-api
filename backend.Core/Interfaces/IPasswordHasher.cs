@@ -1,4 +1,4 @@
-namespace backend.Infrastructure.Interfaces;
+namespace backend.Core.Interfaces;
 
 public interface IPasswordHasher
 { 

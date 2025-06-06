@@ -1,8 +1,9 @@
+using backend.Application;
 using backend.Core.Interfaces;
+using backend.Core.Interfaces.Repositories;
 using backend.Infrastructure;
-using backend.Infrastructure.Interfaces;
-using DataAccess.Postgres;
-using DataAccess.Postgres.Repositories;
+using Persistence;
+using Persistence.Repositories;
 
 namespace backend.API.Extensions;
 
@@ -20,12 +21,13 @@ public static class Services
         services.AddScoped<ITokenProvider, TokenProvider>();
         services.AddScoped<ITokenReader, TokenReader>();
         services.AddScoped<ISubscriptionService, SubscriptionService>();
+        services.AddScoped<IRegistrationService, RegistrationService>();
         services.AddScoped<JwtOptions>();
-        services.AddScoped<UsersRepository>();
-        services.AddScoped<PostsRepository>();
-        services.AddScoped<CommentsRepository>();
-        services.AddScoped<RefreshTokensRepository>();
-        services.AddScoped<SubscriptionsRepository>();
+        services.AddScoped<IUsersRepository,UsersRepository>();
+        services.AddScoped<IPostsRepository,PostsRepository>();
+        services.AddScoped<ICommentsRepository,CommentsRepository>();
+        services.AddScoped<IRefreshTokensRepository,RefreshTokensRepository>();
+        services.AddScoped<ISubscriptionsRepository,SubscriptionsRepository>();
 
         return services;
     }

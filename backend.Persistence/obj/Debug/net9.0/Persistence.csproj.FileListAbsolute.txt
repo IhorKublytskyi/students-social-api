@@ -1,0 +1,6 @@
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Persistence\obj\Debug\net9.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Persistence\obj\Debug\net9.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Persistence\obj\Debug\net9.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Persistence\obj\Debug\net9.0\Persistence.AssemblyInfo.cs
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Persistence\obj\Debug\net9.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Persistence\obj\Debug\net9.0\Persistence.sourcelink.json
