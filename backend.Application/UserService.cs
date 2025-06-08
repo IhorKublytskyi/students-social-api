@@ -13,10 +13,11 @@ public class UserService : IUserService
     private readonly ISubscriptionsRepository _subscriptionsRepository;
     private readonly IPostsRepository _postsRepository;
 
-    public UserService(IUsersRepository repository, ISubscriptionsRepository subscriptionsRepository)
+    public UserService(IUsersRepository repository, ISubscriptionsRepository subscriptionsRepository, IPostsRepository postsRepository)
     {
         _repository = repository;
         _subscriptionsRepository = subscriptionsRepository;
+        _postsRepository = postsRepository;
     }
 
     public async Task<Result<UserInfoResponse>> GetUserInfo(Guid id)
