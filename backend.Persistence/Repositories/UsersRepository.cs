@@ -44,6 +44,7 @@ public class UsersRepository : IUsersRepository
     {
         return await _dbContext.Users
             .AsNoTracking()
+            .Include(u => u.Subscriptions)  
             .FirstOrDefaultAsync(u => u.Username == username);
     }
 

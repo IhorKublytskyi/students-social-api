@@ -8,4 +8,6 @@ public interface ISubscriptionsRepository
     Task<bool> Delete(Guid subscriberId, Guid subscribedId);
     Task<bool> Exists(Guid subscriberId, Guid subscribedId);
     Task<SubscriptionEntity?> Get(Guid subscriberId, Guid subscribedId);
+    int GetFollowers(UserEntity user);
+    int GetFollowed(UserEntity user);
 }

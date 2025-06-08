@@ -13,4 +13,5 @@ public record UserInfoResponse
     public DateTime CreatedAt { get; set; }
     public int FollowersCount { get; set; }
     public int FollowedCount { get; set; }
+    public int PostsCounts { get; set; }
 }

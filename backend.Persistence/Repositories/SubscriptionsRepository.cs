@@ -42,4 +42,20 @@ public class SubscriptionsRepository : ISubscriptionsRepository
             .AnyAsync(s =>
                 s.SubscriberId == subscriberId && s.SubscribedToId == subscribedId);
     }
+
+    public int GetFollowers(UserEntity user)
+    {
+        return _dbContext.Subscriptions
+            .Where(s => s.SubscribedToId == user.Id)
+            .ToList()
+            .Count;
+    }
+
+    public int GetFollowed(UserEntity user)
+    {
+        return _dbContext.Subscriptions
+            .Where(s => s.SubscriberId == user.Id)
+            .ToList()
+            .Count;
+    }
 }
