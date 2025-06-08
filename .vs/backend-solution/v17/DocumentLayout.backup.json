@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\backend.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\backend.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\endpoints\\postendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\endpoints\\postendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4450185B-F14C-4C6A-A545-7049217B4E4B}|backend.Application\\backend.Application.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.application\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4450185B-F14C-4C6A-A545-7049217B4E4B}|backend.Application\\backend.Application.csproj|solutionrelative:backend.application\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4450185B-F14C-4C6A-A545-7049217B4E4B}|backend.Application\\backend.Application.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.application\\backend.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{4450185B-F14C-4C6A-A545-7049217B4E4B}|backend.Application\\backend.Application.csproj|solutionrelative:backend.application\\backend.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\backend.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\backend.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.persistence\\repositories\\subscriptionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|solutionrelative:backend.persistence\\repositories\\subscriptionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\backend.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\backend.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.infrastructure\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20D4AB54-7165-F92E-5417-8419E58E72CA}|backend.Infrastructure\\backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.core\\backend.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\backend.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4450185B-F14C-4C6A-A545-7049217B4E4B}|backend.Application\\backend.Application.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.application\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4450185B-F14C-4C6A-A545-7049217B4E4B}|backend.Application\\backend.Application.csproj|solutionrelative:backend.application\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.persistence\\repositories\\commentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}|backend.Core\\backend.Core.csproj|solutionrelative:backend.core\\interfaces\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.persistence\\repositories\\subscriptionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|solutionrelative:backend.persistence\\repositories\\subscriptionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.persistence\\backend.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{BD221718-02C0-420A-A9F7-53A769C01576}|backend.Persistence\\backend.Persistence.csproj|solutionrelative:backend.persistence\\backend.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -93,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\config\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\config\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -153,10 +157,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\models\\requestmodels\\createpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\models\\requestmodels\\createpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\endpoints\\postendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|solutionrelative:backend.api\\endpoints\\postendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3099D72E-018F-53A0-4784-AB5C5495B65A}|backend.API\\backend.API.csproj|c:\\users\\igorl\\onedrive\\desktop\\backend\\backend.api\\config\\jwtauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -280,43 +280,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CommentsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\CommentsRepository.cs",
-              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\CommentsRepository.cs",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\CommentsRepository.cs",
-              "RelativeToolTip": "backend.Persistence\\Repositories\\CommentsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T09:41:21.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UsersRepository.cs",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\UsersRepository.cs",
-              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\UsersRepository.cs",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\UsersRepository.cs",
-              "RelativeToolTip": "backend.Persistence\\Repositories\\UsersRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T09:39:17.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "SubscriptionService.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Application\\SubscriptionService.cs",
               "RelativeDocumentMoniker": "backend.Application\\SubscriptionService.cs",
               "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Application\\SubscriptionService.cs",
               "RelativeToolTip": "backend.Application\\SubscriptionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T09:33:27.279Z",
               "EditorCaption": ""
@@ -336,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "backend.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\backend.Infrastructure.csproj",
               "RelativeDocumentMoniker": "backend.Infrastructure\\backend.Infrastructure.csproj",
@@ -349,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "JwtOptions.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\JwtOptions.cs",
               "RelativeDocumentMoniker": "backend.Infrastructure\\JwtOptions.cs",
@@ -362,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "backend.Infrastructure\\PasswordHasher.cs",
@@ -375,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "backend.Application",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Application\\backend.Application.csproj",
               "RelativeDocumentMoniker": "backend.Application\\backend.Application.csproj",
@@ -388,7 +362,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
+              "Title": "SubscriptionsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
+              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
+              "RelativeToolTip": "backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:41:19.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PostEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\PostEndpoints.cs",
+              "RelativeDocumentMoniker": "backend.API\\Endpoints\\PostEndpoints.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\PostEndpoints.cs",
+              "RelativeToolTip": "backend.API\\Endpoints\\PostEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:02.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\UserEndpoints.cs",
+              "RelativeDocumentMoniker": "backend.API\\Endpoints\\UserEndpoints.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\UserEndpoints.cs",
+              "RelativeToolTip": "backend.API\\Endpoints\\UserEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T08:39:07.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CommentsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\CommentsRepository.cs",
+              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\CommentsRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\CommentsRepository.cs",
+              "RelativeToolTip": "backend.Persistence\\Repositories\\CommentsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:41:21.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UsersRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\UsersRepository.cs",
+              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\UsersRepository.cs",
+              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\UsersRepository.cs",
+              "RelativeToolTip": "backend.Persistence\\Repositories\\UsersRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T09:39:17.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ICommentsRepository.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\ICommentsRepository.cs",
               "RelativeDocumentMoniker": "backend.Core\\Interfaces\\Repositories\\ICommentsRepository.cs",
@@ -401,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "PostsRepository.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\PostsRepository.cs",
               "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\PostsRepository.cs",
@@ -414,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "RefreshTokensRepository.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\RefreshTokensRepository.cs",
               "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\RefreshTokensRepository.cs",
@@ -427,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "IRefreshTokensRepository.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\IRefreshTokensRepository.cs",
               "RelativeDocumentMoniker": "backend.Core\\Interfaces\\Repositories\\IRefreshTokensRepository.cs",
@@ -440,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "IUsersRepository.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\IUsersRepository.cs",
               "RelativeDocumentMoniker": "backend.Core\\Interfaces\\Repositories\\IUsersRepository.cs",
@@ -453,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "IPostsRepository.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\IPostsRepository.cs",
               "RelativeDocumentMoniker": "backend.Core\\Interfaces\\Repositories\\IPostsRepository.cs",
@@ -466,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ISubscriptionsRepository.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\Repositories\\ISubscriptionsRepository.cs",
               "RelativeDocumentMoniker": "backend.Core\\Interfaces\\Repositories\\ISubscriptionsRepository.cs",
@@ -479,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "IPasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\IPasswordHasher.cs",
               "RelativeDocumentMoniker": "backend.Core\\Interfaces\\IPasswordHasher.cs",
@@ -492,20 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SubscriptionsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
-              "RelativeDocumentMoniker": "backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
-              "RelativeToolTip": "backend.Persistence\\Repositories\\SubscriptionsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T09:41:19.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "backend.Persistence",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Persistence\\backend.Persistence.csproj",
               "RelativeDocumentMoniker": "backend.Persistence\\backend.Persistence.csproj",
@@ -518,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "UserNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Exceptions\\UserNotFoundException.cs",
               "RelativeDocumentMoniker": "backend.Core\\Exceptions\\UserNotFoundException.cs",
@@ -531,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "UserAlreadyExistsException.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Exceptions\\UserAlreadyExistsException.cs",
               "RelativeDocumentMoniker": "backend.Core\\Exceptions\\UserAlreadyExistsException.cs",
@@ -544,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "SubscriptionNotExistException.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Exceptions\\SubscriptionNotExistException.cs",
               "RelativeDocumentMoniker": "backend.Core\\Exceptions\\SubscriptionNotExistException.cs",
@@ -557,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "TokenReader.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\TokenReader.cs",
               "RelativeDocumentMoniker": "backend.Infrastructure\\TokenReader.cs",
@@ -569,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "PostTagEntity.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Entities\\IntermediateEntities\\PostTagEntity.cs",
               "RelativeDocumentMoniker": "backend.Core\\Entities\\IntermediateEntities\\PostTagEntity.cs",
@@ -581,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Program.cs",
               "RelativeDocumentMoniker": "backend.API\\Program.cs",
@@ -593,19 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UserEndpoints.cs",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\UserEndpoints.cs",
-              "RelativeDocumentMoniker": "backend.API\\Endpoints\\UserEndpoints.cs",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\UserEndpoints.cs",
-              "RelativeToolTip": "backend.API\\Endpoints\\UserEndpoints.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T08:39:07.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Services.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Config\\Services.cs",
               "RelativeDocumentMoniker": "backend.API\\Config\\Services.cs",
@@ -618,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "ITokenReader.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\ITokenReader.cs",
               "RelativeDocumentMoniker": "backend.Core\\Interfaces\\ITokenReader.cs",
@@ -631,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "TokenProvider.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Infrastructure\\TokenProvider.cs",
               "RelativeDocumentMoniker": "backend.Infrastructure\\TokenProvider.cs",
@@ -643,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ITokenProvider.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\ITokenProvider.cs",
               "RelativeDocumentMoniker": "backend.Core\\Interfaces\\ITokenProvider.cs",
@@ -655,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "ISubscriptionService.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Interfaces\\ISubscriptionService.cs",
               "RelativeDocumentMoniker": "backend.Core\\Interfaces\\ISubscriptionService.cs",
@@ -667,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "FavouritePostEntity.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Entities\\IntermediateEntities\\FavouritePostEntity.cs",
               "RelativeDocumentMoniker": "backend.Core\\Entities\\IntermediateEntities\\FavouritePostEntity.cs",
@@ -679,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "CloseFriendEntity.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.Core\\Entities\\IntermediateEntities\\CloseFriendEntity.cs",
               "RelativeDocumentMoniker": "backend.Core\\Entities\\IntermediateEntities\\CloseFriendEntity.cs",
@@ -691,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "UserInfoResponse.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\ResponseModels\\UserInfoResponse.cs",
               "RelativeDocumentMoniker": "backend.API\\Models\\ResponseModels\\UserInfoResponse.cs",
@@ -703,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "PostsResponse.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\ResponseModels\\PostsResponse.cs",
               "RelativeDocumentMoniker": "backend.API\\Models\\ResponseModels\\PostsResponse.cs",
@@ -715,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "CommentsResponse.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\ResponseModels\\CommentsResponse.cs",
               "RelativeDocumentMoniker": "backend.API\\Models\\ResponseModels\\CommentsResponse.cs",
@@ -727,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\RequestModels\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "backend.API\\Models\\RequestModels\\RegisterRequest.cs",
@@ -739,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\RequestModels\\LoginRequest.cs",
               "RelativeDocumentMoniker": "backend.API\\Models\\RequestModels\\LoginRequest.cs",
@@ -751,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "CreatePostRequest.cs",
               "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Models\\RequestModels\\CreatePostRequest.cs",
               "RelativeDocumentMoniker": "backend.API\\Models\\RequestModels\\CreatePostRequest.cs",
@@ -760,18 +774,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T08:39:34.669Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "PostEndpoints.cs",
-              "DocumentMoniker": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\PostEndpoints.cs",
-              "RelativeDocumentMoniker": "backend.API\\Endpoints\\PostEndpoints.cs",
-              "ToolTip": "C:\\Users\\igorl\\OneDrive\\Desktop\\backend\\backend.API\\Endpoints\\PostEndpoints.cs",
-              "RelativeToolTip": "backend.API\\Endpoints\\PostEndpoints.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T08:39:02.221Z"
             },
             {
               "$type": "Document",

@@ -29,6 +29,5 @@ public class FavouritePostEntityConfiguration : IEntityTypeConfiguration<Favouri
             .WithMany(p => p.FavouredBy)
             .HasForeignKey(fp => fp.PostId)
             .IsRequired();
-
     }
 }

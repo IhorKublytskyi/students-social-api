@@ -1,5 +1,5 @@
 using backend.Application;
-using backend.Core.Interfaces;
+using backend.Application.Interfaces;
 using backend.Core.Interfaces.Repositories;
 using backend.Infrastructure;
 using Persistence;
@@ -22,12 +22,16 @@ public static class Services
         services.AddScoped<ITokenReader, TokenReader>();
         services.AddScoped<ISubscriptionService, SubscriptionService>();
         services.AddScoped<IRegistrationService, RegistrationService>();
+        services.AddScoped<IRegistrationDataValidation, RegistrationDataValidation>();
+        services.AddScoped<ILoginService, LoginService>();
+        services.AddScoped<IRefreshTokenService, RefreshTokenService>();
+        services.AddScoped<IUserService, UserService>();
         services.AddScoped<JwtOptions>();
-        services.AddScoped<IUsersRepository,UsersRepository>();
-        services.AddScoped<IPostsRepository,PostsRepository>();
-        services.AddScoped<ICommentsRepository,CommentsRepository>();
-        services.AddScoped<IRefreshTokensRepository,RefreshTokensRepository>();
-        services.AddScoped<ISubscriptionsRepository,SubscriptionsRepository>();
+        services.AddScoped<IUsersRepository, UsersRepository>();
+        services.AddScoped<IPostsRepository, PostsRepository>();
+        services.AddScoped<ICommentsRepository, CommentsRepository>();
+        services.AddScoped<IRefreshTokensRepository, RefreshTokensRepository>();
+        services.AddScoped<ISubscriptionsRepository, SubscriptionsRepository>();
 
         return services;
     }

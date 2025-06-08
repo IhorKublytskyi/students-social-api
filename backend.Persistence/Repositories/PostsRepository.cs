@@ -33,6 +33,7 @@ public class PostsRepository : IPostsRepository
             .AsNoTracking()
             .ToListAsync();
     }
+
     public async Task<List<PostEntity>> GetByTitle(string title)
     {
         return await _dbContext.Posts

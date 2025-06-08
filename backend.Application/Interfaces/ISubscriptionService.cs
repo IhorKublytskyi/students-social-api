@@ -1,6 +1,6 @@
 using backend.Core.Results;
 
-namespace backend.Core.Interfaces;
+namespace backend.Application.Interfaces;
 
 public interface ISubscriptionService
 {

@@ -23,7 +23,7 @@ public class LikePostEntityConfiguration : IEntityTypeConfiguration<LikePostEnti
             .WithMany(u => u.Likes)
             .HasForeignKey(lp => lp.UserId)
             .IsRequired();
-        
+
         builder
             .HasOne(lp => lp.Post)
             .WithMany(p => p.Likes)

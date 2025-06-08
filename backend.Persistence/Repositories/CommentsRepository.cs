@@ -3,6 +3,7 @@ using backend.Core.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Repositories;
+
 public class CommentsRepository : ICommentsRepository
 {
     private readonly StudentsSocialDbContext _dbContext;

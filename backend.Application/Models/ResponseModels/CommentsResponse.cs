@@ -1,8 +1,8 @@
-namespace backend.API.ResponseModels;
-
 using backend.Core.Entities;
 
-public class CommentsResponse
+namespace backend.Application.ResponseModels;
+
+public record CommentsResponse
 {
     public List<CommentEntity> Content { get; set; } = null!;
     public int TotalCount { get; set; }

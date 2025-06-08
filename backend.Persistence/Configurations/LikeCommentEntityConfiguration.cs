@@ -23,7 +23,7 @@ public class LikeCommentEntityConfiguration : IEntityTypeConfiguration<LikeComme
             .WithMany(u => u.LikesComments)
             .HasForeignKey(lc => lc.UserId)
             .IsRequired();
-        
+
         builder
             .HasOne(lc => lc.Comment)
             .WithMany(u => u.Likes)

@@ -23,7 +23,7 @@ public class PostTagEntityConfiguration : IEntityTypeConfiguration<PostTagEntity
             .WithMany(u => u.Tags)
             .HasForeignKey(pt => pt.UserId)
             .IsRequired();
-        
+
         builder
             .HasOne(pt => pt.Post)
             .WithMany(p => p.Tags)

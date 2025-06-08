@@ -2,8 +2,8 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using backend.Application.Interfaces;
 using backend.Core.Entities;
-using backend.Core.Interfaces;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
@@ -20,13 +20,13 @@ public class TokenProvider : ITokenProvider
 
     public string Generate(UserEntity user)
     {
-        var claims = new List<Claim>()
+        var claims = new List<Claim>
         {
-            new Claim("Id", user.Id.ToString()),
-            new Claim("Email", user.Email),
-            new Claim("Username", user.Username),
-            new Claim("FirstName", user.FirstName),
-            new Claim("LastName", user.LastName)
+            new("Id", user.Id.ToString()),
+            new("Email", user.Email),
+            new("Username", user.Username),
+            new("FirstName", user.FirstName),
+            new("LastName", user.LastName)
         };
         var signingCredentials = new SigningCredentials
         (

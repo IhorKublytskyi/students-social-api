@@ -28,9 +28,9 @@ public class SubscriptionsRepository : ISubscriptionsRepository
 
     public async Task<bool> Delete(Guid subscriberId, Guid subscribedId)
     {
-        int rowsDeleted = await _dbContext.Subscriptions
-             .Where(s => s.SubscriberId == subscriberId && s.SubscribedToId == subscribedId)
-             .ExecuteDeleteAsync();
+        var rowsDeleted = await _dbContext.Subscriptions
+            .Where(s => s.SubscriberId == subscriberId && s.SubscribedToId == subscribedId)
+            .ExecuteDeleteAsync();
 
         return rowsDeleted > 0;
     }
@@ -40,6 +40,6 @@ public class SubscriptionsRepository : ISubscriptionsRepository
         return await _dbContext.Subscriptions
             .AsNoTracking()
             .AnyAsync(s =>
-            s.SubscriberId == subscriberId && s.SubscribedToId == subscribedId);
+                s.SubscriberId == subscriberId && s.SubscribedToId == subscribedId);
     }
 }

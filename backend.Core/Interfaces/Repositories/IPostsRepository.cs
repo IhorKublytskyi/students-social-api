@@ -9,5 +9,3 @@ public interface IPostsRepository
     Task<List<PostEntity>> GetByTitle(string title);
     Task<List<PostEntity>> GetByUserId(Guid? userId);
 }
-
-

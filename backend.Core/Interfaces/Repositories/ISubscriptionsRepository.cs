@@ -1,6 +1,7 @@
 ﻿using backend.Core.Entities;
 
 namespace backend.Core.Interfaces.Repositories;
+
 public interface ISubscriptionsRepository
 {
     Task Add(SubscriptionEntity subscription);

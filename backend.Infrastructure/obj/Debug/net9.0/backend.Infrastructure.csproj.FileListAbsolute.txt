@@ -14,3 +14,5 @@ C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\obj\Debug\net9.0\
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\obj\Debug\net9.0\refint\backend.Infrastructure.dll
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\obj\Debug\net9.0\backend.Infrastructure.pdb
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\obj\Debug\net9.0\ref\backend.Infrastructure.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\bin\Debug\net9.0\backend.Application.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Infrastructure\bin\Debug\net9.0\backend.Application.pdb

@@ -1,5 +1,5 @@
 using System.IdentityModel.Tokens.Jwt;
-using backend.Core.Interfaces;
+using backend.Application.Interfaces;
 
 namespace backend.Infrastructure;
 
@@ -9,7 +9,7 @@ public class TokenReader : ITokenReader
     {
         if (string.IsNullOrWhiteSpace(type) || string.IsNullOrWhiteSpace(type))
             return null;
-        
+
         var token = new JwtSecurityTokenHandler().ReadJwtToken(accessToken);
 
         var value = token.Claims.FirstOrDefault(c => c.Type == type).Value;

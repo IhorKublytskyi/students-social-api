@@ -14,3 +14,12 @@ C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\obj\Debug\net9.0\bac
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\obj\Debug\net9.0\refint\backend.Application.dll
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\obj\Debug\net9.0\backend.Application.pdb
 C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\obj\Debug\net9.0\ref\backend.Application.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\bin\Debug\net9.0\Microsoft.AspNetCore.Http.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\bin\Debug\net9.0\Microsoft.Extensions.Features.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\bin\Debug\net9.0\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\bin\Debug\net9.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\bin\Debug\net9.0\Microsoft.Net.Http.Headers.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\bin\Debug\net9.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\bin\Debug\net9.0\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\igorl\OneDrive\Desktop\backend\backend.Application\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll

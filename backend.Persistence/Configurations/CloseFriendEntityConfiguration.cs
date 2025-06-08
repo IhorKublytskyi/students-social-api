@@ -9,7 +9,7 @@ public class CloseFriendEntityConfiguration : IEntityTypeConfiguration<CloseFrie
     public void Configure(EntityTypeBuilder<CloseFriendEntity> builder)
     {
         builder.ToTable("CloseFriends");
-        
+
         builder.HasKey(cf => new
         {
             cf.OwnerUserId,
@@ -17,11 +17,11 @@ public class CloseFriendEntityConfiguration : IEntityTypeConfiguration<CloseFrie
         });
 
         builder.Property(cfu => cfu.FollowedAt).HasColumnType("timestamp").HasColumnName("FollowedAt");
-        
+
         builder
             .HasOne(ou => ou.OwnerUser)
             .WithMany(u => u.ClosedFriends)
-            .HasForeignKey(ou =>  ou.OwnerUserId)
+            .HasForeignKey(ou => ou.OwnerUserId)
             .IsRequired();
     }
 }

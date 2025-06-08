@@ -1,6 +1,6 @@
 using backend.Core.Entities;
 
-namespace backend.Core.Interfaces;
+namespace backend.Application.Interfaces;
 
 public interface ITokenProvider
 {

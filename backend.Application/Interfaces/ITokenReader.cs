@@ -1,4 +1,4 @@
-namespace backend.Core.Interfaces;
+namespace backend.Application.Interfaces;
 
 public interface ITokenReader
 {

@@ -1,8 +1,7 @@
-using backend.API.RequestModels;
-using backend.API.ResponseModels;
+using backend.Application.RequestModels;
+using backend.Application.ResponseModels;
 using backend.Core.Entities;
 using backend.Core.Interfaces.Repositories;
-using Persistence.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend.API.Endpoints;
@@ -20,24 +19,24 @@ public static class PostEndpoints
         {
             var comments = await commentsRepository.GetByPostId(postId);
 
-            return Results.Ok(new CommentsResponse()
+            return Results.Ok(new CommentsResponse
             {
                 Content = comments,
                 TotalCount = comments.Count
             });
         }).RequireAuthorization();
 
-        
+
         //Posts GET
         postGroup.MapGet("/", async (
-            [FromQuery] Guid? userId, 
+            [FromQuery] Guid? userId,
             IPostsRepository postsRepository) =>
         {
             if (userId != null)
             {
                 var posts = await postsRepository.GetByUserId(userId);
 
-                return Results.Ok(new PostsResponse()
+                return Results.Ok(new PostsResponse
                 {
                     Content = posts,
                     TotalCount = posts.Count
@@ -47,25 +46,25 @@ public static class PostEndpoints
             {
                 var posts = await postsRepository.Get();
 
-                return Results.Ok(new PostsResponse()
+                return Results.Ok(new PostsResponse
                 {
                     Content = posts,
                     TotalCount = posts.Count
                 });
             }
         }).RequireAuthorization();
-        
+
         //Posts POST
         postGroup.MapPost("/", async (
-            IUsersRepository usersRepository, 
-            CreatePostRequest createPostData, 
+            IUsersRepository usersRepository,
+            CreatePostRequest createPostData,
             IPostsRepository postsRepository) =>
         {
             var user = await usersRepository.GetByEmail(createPostData.UserEmail);
 
             if (user != null)
             {
-                var post = new PostEntity()
+                var post = new PostEntity
                 {
                     Id = Guid.NewGuid(),
                     UserId = user.Id,
@@ -75,12 +74,11 @@ public static class PostEndpoints
                     IsPrivate = createPostData.IsPrivate
                 };
                 await postsRepository.Add(post);
-        
+
                 return Results.Ok("Post was successfully added");
             }
 
             return Results.BadRequest("User with this email was not found");
         }).RequireAuthorization();
-        
     }
 }

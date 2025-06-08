@@ -1,12 +1,10 @@
-using backend.API.RequestModels;
-using backend.API.ResponseModels;
-using backend.Core.Entities;
-using backend.Core.Interfaces;
-using Persistence.Repositories;
+using backend.API.Extensions;
+using backend.Application.Interfaces;
+using backend.Application.RequestModels;
+using backend.Application.ResponseModels;
+using backend.Core.Results;
 using Microsoft.AspNetCore.CookiePolicy;
 using Microsoft.AspNetCore.Mvc;
-using backend.API.Extensions;
-using backend.Core.Interfaces.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +15,7 @@ AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 var app = builder.Build();
 
 app.MapEndpoints();
-app.UseCookiePolicy(new CookiePolicyOptions()
+app.UseCookiePolicy(new CookiePolicyOptions
 {
     HttpOnly = HttpOnlyPolicy.Always,
     MinimumSameSitePolicy = SameSiteMode.Strict,
@@ -27,114 +25,78 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapPost("/api/register", async (
-    RegisterRequest request, 
-    IRegistrationService service) =>
+    RegistrationRequest request,
+    IRegistrationService service,
+    IRegistrationDataValidation validator) =>
 {
-    var result = await service.Register(request.FirstName, request.LastName, request.Username, request.Email, DateTime.Parse(request.BirthDate), 
-        request.Password);
+    var validationResult = validator.Validate(request);
+    if (!validationResult.IsSuccess)
+        return Results.BadRequest(validationResult.Error);
+
+    var result = await service.RegisterAsync(request);
 
     return result.IsSuccess ? Results.Ok() : Results.BadRequest(result.Error);
 });
 
 app.MapPost("/api/login", async (
-    [FromBody] LoginRequest loginData, 
-    IUsersRepository usersRepository,
-    IPasswordHasher passwordHasher,
-    ITokenProvider tokenProvider,
-    HttpContext context,
-    IRefreshTokensRepository refreshTokensRepository) =>
+    [FromBody] LoginRequest request,
+    ILoginService service,
+    HttpContext context) =>
 {
-    var user = await usersRepository.GetByEmail(loginData.Email);
-    if (user == null)
-    {
-        return Results.BadRequest("The user with this email address does not exist");
-    }
+    if (string.IsNullOrWhiteSpace(request.Email))
+        return Results.BadRequest("Email is required");
+    if (string.IsNullOrWhiteSpace(request.Password))
+        return Results.BadRequest("Password is required");
 
-    if (!passwordHasher.VerifyHashedPassword(loginData.Password, user.PasswordHash))
-    {
-        return Results.BadRequest("Invalid email or password");
-    }
+    var result = await service.LoginAsync(request.Email, request.Password);
 
-    var accessToken = tokenProvider.Generate(user);
-    var refreshToken = new RefreshTokenEntity()
-    {
-        Id = Guid.NewGuid(),
-        Token = tokenProvider.GenerateRefreshToken(),
-        ExpireIn = DateTime.UtcNow.AddHours(builder.Configuration.GetValue<int>("JwtOptions:RefreshTokenValidityHours")),
-        UserId = user.Id
-    };
-    await refreshTokensRepository.Add(refreshToken);
-    
-    context.Response.Cookies.Append("accessToken", accessToken);
-    context.Response.Cookies.Append("refreshToken", refreshToken.Token);
+    if (!result.IsSuccess)
+        return Results.BadRequest(result.Error);
 
-    return Results.Ok(refreshToken.Token);
+    context.Response.Cookies.Append("accessToken", result.Value.Item1);
+    context.Response.Cookies.Append("refreshToken", result.Value.Item2);
+
+    return Results.Ok();
 });
 
-app.MapGet("/api/logout", async (HttpContext context) =>
+app.MapGet("/api/logout", (HttpContext context) =>
 {
     context.Response.Cookies.Delete("accessToken");
     context.Response.Cookies.Delete("refreshToken");
 }).RequireAuthorization();
 
 app.MapPost("/api/refresh-tokens", async (
-    IRefreshTokensRepository refreshTokensRepository,
-    ITokenProvider tokenProvider,
+    IRefreshTokenService service,
     HttpContext context) =>
 {
-    var refreshToken = await refreshTokensRepository.Get(context.Request.Cookies["refreshToken"]);
-    
-    if (refreshToken == null || refreshToken.ExpireIn < DateTime.UtcNow)
-        return Results.Problem(detail: "The refresh token has expired", statusCode:401);
+    var refreshTokenValue = context.Request.Cookies["refreshToken"];
+    if (string.IsNullOrWhiteSpace(refreshTokenValue))
+        return Results.BadRequest("Refresh token is required");
 
-    var user = refreshToken.User;
-    await refreshTokensRepository.Delete(refreshToken.Id);
+    var result = await service.RefreshAsync(refreshTokenValue);
 
-    refreshToken = new RefreshTokenEntity()
-    {
-        Id = Guid.NewGuid(),
-        ExpireIn = DateTime.UtcNow.AddHours(builder.Configuration.GetValue<int>("JwtOptions:RefreshTokenValidityHours")),
-        Token = tokenProvider.GenerateRefreshToken(),
-        UserId = user.Id
-    };
-    await refreshTokensRepository.Add(refreshToken);
+    if (!result.IsSuccess)
+        return Results.BadRequest(result.Error);
 
-    var accessToken = tokenProvider.Generate(user);
-
-    context.Response.Cookies.Append("accessToken", accessToken);
-    context.Response.Cookies.Append("refreshToken", refreshToken.Token);
+    context.Response.Cookies.Append("accessToken", result.Value.Item1);
+    context.Response.Cookies.Append("refreshToken", result.Value.Item2);
 
     return Results.Ok();
 });
 
 //Me GET
 app.MapGet("/api/me", async (
-    HttpContext context, 
-    IUsersRepository usersRepository,
+    HttpContext context,
+    IUserService userService,
     ITokenReader tokenReader) =>
 {
-    string? id = tokenReader.ReadToken(context.Request.Cookies["accessToken"], "Id");
-
-    if (id == null)
+    string id = tokenReader.ReadToken(context.Request.Cookies["accessToken"], "Id");
+    if (string.IsNullOrWhiteSpace(id))
         return Results.BadRequest("Invalid token data");
 
-    var user = await usersRepository.GetById(Guid.Parse(id));
+    var user = await userService.GetUserInfo(Guid.Parse(id));
 
-    var userInfo = new UserInfoResponse()
-    {
-        Email = user.Email,
-        Username = user.Username,
-        FirstName = user.FirstName,
-        LastName = user.LastName,
-        ProfilePicture = user.ProfilePicture,
-        Status = user.Status,
-        BirthDate = user.BirthDate,
-        Biography = user.Biography,
-        CreatedAt = user.CreatedAt,
-        IsOnline = user.IsOnline
-    };
-    
-    return Results.Ok(userInfo);
+    return user == null ? Results.BadRequest(user.Error) : Results.Ok(user.Value);
 }).RequireAuthorization();
 
 app.Run();

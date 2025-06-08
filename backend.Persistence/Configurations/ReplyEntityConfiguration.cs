@@ -23,7 +23,5 @@ public class ReplyEntityConfiguration : IEntityTypeConfiguration<ReplyEntity>
             .WithMany(c => c.Replies)
             .HasForeignKey(r => r.ReplyId)
             .IsRequired();
-
-
     }
 }

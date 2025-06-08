@@ -1,6 +1,6 @@
-namespace backend.API.ResponseModels;
+namespace backend.Application.ResponseModels;
 
-public class UserInfoResponse
+public record UserInfoResponse
 {
     public string Email { get; set; } = string.Empty;
     public string Username { get; set; } = string.Empty;
@@ -11,5 +11,6 @@ public class UserInfoResponse
     public DateTime BirthDate { get; set; }
     public string Biography { get; set; } = string.Empty;
     public DateTime CreatedAt { get; set; }
-    public bool IsOnline { get; set; }
+    public int FollowersCount { get; set; }
+    public int FollowedCount { get; set; }
 }

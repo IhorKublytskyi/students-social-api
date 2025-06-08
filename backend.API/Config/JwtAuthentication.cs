@@ -4,7 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace backend.API.Extensions;
 
-public static class JwtAuthentication 
+public static class JwtAuthentication
 {
     public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration config)
     {
@@ -12,7 +12,7 @@ public static class JwtAuthentication
             .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
             {
-                options.TokenValidationParameters = new TokenValidationParameters()
+                options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ClockSkew = TimeSpan.Zero,
                     ValidateLifetime = true,
@@ -22,12 +22,12 @@ public static class JwtAuthentication
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JwtOptions:SecretKey"]))
                 };
 
-                options.Events = new JwtBearerEvents()
+                options.Events = new JwtBearerEvents
                 {
                     OnMessageReceived = context =>
                     {
                         context.Token = context.Request.Cookies["accessToken"];
-                
+
                         return Task.CompletedTask;
                     }
                 };
