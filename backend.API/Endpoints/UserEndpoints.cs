@@ -13,11 +13,19 @@ public static class UserEndpoints
 
         //Users GET
         userGroup.MapGet("/", async (
+            [FromQuery] string? username,
             [FromQuery] int? year,
             [FromQuery] string? firstName,
             [FromQuery] string? lastName,
             IUserService service) =>
         {
+            if (username != null)
+            {
+                var user = await service.GetUser(username);
+
+                return user.IsSuccess ? Results.Ok(user.Value) : Results.BadRequest(user.Error);
+            }
+            
             var filter = new UserFilter();
             if (year != null)
                 filter.Year = year;

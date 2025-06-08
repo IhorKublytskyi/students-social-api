@@ -1,4 +1,5 @@
 using backend.Application.Interfaces;
+using backend.Application.ResponseModels;
 using backend.Core.Entities;
 using backend.Core.Results;
 using backend.Infrastructure;
@@ -29,14 +30,14 @@ public class LoginService : ILoginService
         _options = options.Value;
     }
 
-    public async Task<Result<(string, string)>> LoginAsync(string email, string password)
+    public async Task<Result<TokensResponse>> LoginAsync(string email, string password)
     {
         var user = await _usersRepository.GetByEmail(email);
         if (user == null)
-            return Result<(string, string)>.Failure("User not found");
+            return Result<TokensResponse>.Failure("User not found");
         
         if (!_hasher.VerifyPassword(password, user.PasswordHash))
-            return Result<(string, string)>.Failure("Invalid email or password");
+            return Result<TokensResponse>.Failure("Invalid email or password");
         
         var accessToken = _tokenProvider.Generate(user);
         var refreshToken = new RefreshTokenEntity
@@ -48,6 +49,11 @@ public class LoginService : ILoginService
         };
         await _refreshTokensRepository.Add(refreshToken);
 
-        return Result<(string, string)>.Success((accessToken, refreshToken.Token));
+        var response = new TokensResponse()
+        {
+            AccessToken = accessToken,
+            RefreshToken = refreshToken.Token
+        };
+        return Result<TokensResponse>.Success(response);
     }
 }

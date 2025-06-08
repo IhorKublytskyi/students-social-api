@@ -16,10 +16,10 @@ public class UserEntity
     public bool IsOnline { get; set; }
     public List<PostEntity>? Posts { get; set; }
     public List<CommentEntity>? Comments { get; set; }
-    public List<SubscriptionEntity> Subscriptions { get; set; }
+    public List<SubscriptionEntity>? Subscriptions { get; set; }
     public List<CloseFriendEntity>? ClosedFriends { get; set; }
     public List<FavouritePostEntity>? FavouritePosts { get; set; }
     public List<LikePostEntity>? Likes { get; set; }
-    public List<LikeCommentEntity> LikesComments { get; set; }
-    public List<PostTagEntity> Tags { get; set; }
+    public List<LikeCommentEntity>? LikesComments { get; set; }
+    public List<PostTagEntity>? Tags { get; set; }
 }

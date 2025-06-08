@@ -1,8 +1,9 @@
+using backend.Application.ResponseModels;
 using backend.Core.Results;
 
 namespace backend.Application.Interfaces;
 
 public interface ILoginService
 {
-    Task<Result<(string, string)>> LoginAsync(string email, string password);
+    Task<Result<TokensResponse>> LoginAsync(string email, string password);
 }

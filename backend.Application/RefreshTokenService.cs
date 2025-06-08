@@ -1,4 +1,5 @@
 using backend.Application.Interfaces;
+using backend.Application.ResponseModels;
 using backend.Core.Entities;
 using backend.Core.Results;
 using backend.Infrastructure;
@@ -23,13 +24,13 @@ public class RefreshTokenService : IRefreshTokenService
         _options = options.Value;
     }
 
-    public async Task<Result<(string, string)>> RefreshAsync(string refreshTokenValue)
+    public async Task<Result<TokensResponse>> RefreshAsync(string refreshTokenValue)
     {
         var refreshToken = await _refreshTokensRepository.Get(refreshTokenValue);
         if (refreshToken == null)
-            return Result<(string, string)>.Failure("Refresh token not found");
+            return Result<TokensResponse>.Failure("Refresh token not found");
         if (refreshToken.ExpireIn < DateTime.UtcNow)
-            return Result<(string, string)>.Failure("Refresh token has expired");
+            return Result<TokensResponse>.Failure("Refresh token has expired");
 
         var user = refreshToken.User;
 
@@ -46,6 +47,11 @@ public class RefreshTokenService : IRefreshTokenService
 
         var accessToken = _tokenProvider.Generate(user);
 
-        return Result<(string, string)>.Success((accessToken, refreshToken.Token));
+        var response = new TokensResponse()
+        {
+            AccessToken = accessToken,
+            RefreshToken = refreshToken.Token
+        };
+        return Result<TokensResponse>.Success(response);
     }
 }

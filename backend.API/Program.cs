@@ -1,8 +1,6 @@
 using backend.API.Extensions;
 using backend.Application.Interfaces;
 using backend.Application.RequestModels;
-using backend.Application.ResponseModels;
-using backend.Core.Results;
 using Microsoft.AspNetCore.CookiePolicy;
 using Microsoft.AspNetCore.Mvc;
 
@@ -53,8 +51,8 @@ app.MapPost("/api/login", async (
     if (!result.IsSuccess)
         return Results.BadRequest(result.Error);
 
-    context.Response.Cookies.Append("accessToken", result.Value.Item1);
-    context.Response.Cookies.Append("refreshToken", result.Value.Item2);
+    context.Response.Cookies.Append("accessToken", result.Value.AccessToken);
+    context.Response.Cookies.Append("refreshToken", result.Value.RefreshToken);
 
     return Results.Ok();
 });
@@ -78,8 +76,8 @@ app.MapPost("/api/refresh-tokens", async (
     if (!result.IsSuccess)
         return Results.BadRequest(result.Error);
 
-    context.Response.Cookies.Append("accessToken", result.Value.Item1);
-    context.Response.Cookies.Append("refreshToken", result.Value.Item2);
+    context.Response.Cookies.Append("accessToken", result.Value.AccessToken);
+    context.Response.Cookies.Append("refreshToken", result.Value.RefreshToken);
 
     return Results.Ok();
 });
