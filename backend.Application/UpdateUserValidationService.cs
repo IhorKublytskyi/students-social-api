@@ -1,3 +1,4 @@
+using System.Globalization;
 using backend.Application.Interfaces;
 using backend.Application.Models.RequestModels;
 using backend.Core.Entities;
@@ -19,7 +20,7 @@ public class UpdateUserValidationService : IUpdateUserValidationService
         if (string.IsNullOrWhiteSpace(request.Status))
             request.Status = user.Status;
         if (string.IsNullOrWhiteSpace(request.BirthDate))
-            request.BirthDate = user.BirthDate.ToString("en-US");
+            request.BirthDate = user.BirthDate.ToString("dd.MM.yyyy HH:mm:ss");
         if (string.IsNullOrWhiteSpace(request.Biography))
             request.Biography = user.Biography;
         if (request.ProfilePicture.Length == 0 || request.ProfilePicture == null)
