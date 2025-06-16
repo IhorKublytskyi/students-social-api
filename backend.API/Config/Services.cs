@@ -33,6 +33,7 @@ public static class Services
         services.AddScoped<IRefreshTokensRepository, RefreshTokensRepository>();
         services.AddScoped<ISubscriptionsRepository, SubscriptionsRepository>();
         services.AddScoped<IUpdateUserValidationService, UpdateUserValidationService>();
+        services.AddScoped<IPostService, PostService>();
 
         return services;
     }

@@ -4,7 +4,6 @@ using backend.Application.Models.ResponseModels;
 using backend.Core.Interfaces.Repositories;
 using backend.Core.Models.FilterModels;
 using backend.Core.Results;
-using Microsoft.AspNetCore.Http;
 namespace backend.Application;
 
 public class UserService : IUserService
@@ -79,6 +78,10 @@ public class UserService : IUserService
         var user = await _repository.GetById(id);
         if(user == null)
             return Result.Failure("User not found");
+
+        var existedUser = await _repository.GetByUsername(request.Username);
+        if(existedUser != null && existedUser.Id != user.Id)
+            return Result.Failure("Username is already taken");
 
         request = _updateUserValidator.Validate(request, user); 
         

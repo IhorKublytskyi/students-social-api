@@ -144,3 +144,4 @@ C:\Users\igorl\OneDrive\Desktop\backend\backend.API\obj\Debug\net9.0\backend.API
 C:\Users\igorl\OneDrive\Desktop\backend\backend.API\obj\Debug\net9.0\ref\backend.API.dll
 C:\Users\igorl\OneDrive\Desktop\backend\backend.API\bin\Debug\net9.0\backend.Application.dll
 C:\Users\igorl\OneDrive\Desktop\backend\backend.API\bin\Debug\net9.0\backend.Application.pdb
+C:\Users\igorl\OneDrive\Desktop\backend\backend.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

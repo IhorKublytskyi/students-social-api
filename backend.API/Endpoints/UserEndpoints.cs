@@ -42,11 +42,15 @@ public static class UserEndpoints
 
         //Users PUT
         userGroup.MapPut("/", async (
-            [FromQuery] Guid id, 
             [FromBody] UpdateUserRequest request,
+            HttpContext context,
             IUserService service,
-            IUpdateUserValidationService validator) =>
+            IUpdateUserValidationService validator,
+            ITokenReader reader) =>
         {
+            var accessToken = context.Request.Cookies["accessToken"]!;
+            var id = Guid.Parse(reader.ReadToken(accessToken, "Id"));
+
             var result = await service.Update(id, request);
 
             return result.IsSuccess ? Results.Ok() : Results.BadRequest(result.Error);

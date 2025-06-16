@@ -1,9 +1,7 @@
 using backend.Application.Models.RequestModels;
-using backend.Application.Models.RequestModels;
 using backend.Application.Models.ResponseModels;
 using backend.Core.Models.FilterModels;
 using backend.Core.Results;
-using Microsoft.AspNetCore.Http;
 
 namespace backend.Application.Interfaces;
 public interface IUserService

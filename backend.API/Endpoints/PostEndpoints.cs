@@ -1,7 +1,5 @@
+using backend.Application.Interfaces;
 using backend.Application.Models.RequestModels;
-using backend.Application.Models.ResponseModels;
-using backend.Core.Entities;
-using backend.Core.Interfaces.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend.API.Endpoints;
@@ -15,70 +13,39 @@ public static class PostEndpoints
         //Post`s comments GET
         postGroup.MapGet("/comments", async (
             [FromQuery] Guid postId,
-            ICommentsRepository commentsRepository) =>
+            IPostService service) =>
         {
-            var comments = await commentsRepository.GetByPostId(postId);
+            var response = await service.GetComments(postId);
 
-            return Results.Ok(new CommentsResponse
-            {
-                Content = comments,
-                TotalCount = comments.Count
-            });
+            return response.IsSuccess ? Results.Ok(response.Value) : Results.BadRequest(response.Error);
         }).RequireAuthorization();
 
 
         //Posts GET
         postGroup.MapGet("/", async (
-            [FromQuery] Guid? userId,
-            IPostsRepository postsRepository) =>
+            [FromQuery] Guid userId,
+            IPostService service) =>
         {
-            if (userId != null)
-            {
-                var posts = await postsRepository.GetByUserId(userId);
+            var response = await service.Get(userId);
 
-                return Results.Ok(new PostsResponse
-                {
-                    Content = posts,
-                    TotalCount = posts.Count
-                });
-            }
-            else
-            {
-                var posts = await postsRepository.Get();
-
-                return Results.Ok(new PostsResponse
-                {
-                    Content = posts,
-                    TotalCount = posts.Count
-                });
-            }
+            return response.IsSuccess ? Results.Ok(response.Value) : Results.BadRequest(response.Error);
         }).RequireAuthorization();
 
         //Posts POST
         postGroup.MapPost("/", async (
-            IUsersRepository usersRepository,
-            CreatePostRequest createPostData,
-            IPostsRepository postsRepository) =>
+            HttpContext context,
+            ITokenReader reader,
+            IPostService service,
+            CreatePostRequest request) =>
         {
-            var user = await usersRepository.GetByEmail(createPostData.UserEmail);
+            var accessToken = context.Request.Cookies["accessToken"]!;
+            var id = Guid.Parse(reader.ReadToken(accessToken, "Id"));
 
-            if (user != null)
-            {
-                var post = new PostEntity
-                {
-                    Id = Guid.NewGuid(),
-                    UserId = user.Id,
-                    CreatedAt = DateTime.Now,
-                    Title = createPostData.Title,
-                    Description = createPostData.Description,
-                    IsPrivate = createPostData.IsPrivate
-                };
-                await postsRepository.Add(post);
+            request.UserId = id;
 
-                return Results.Ok("Post was successfully added");
-            }
+            var response = await service.Create(request);
 
-            return Results.BadRequest("User with this email was not found");
+            return response.IsSuccess ? Results.Ok() : Results.BadRequest(response.Error);
         }).RequireAuthorization();
     }
 }

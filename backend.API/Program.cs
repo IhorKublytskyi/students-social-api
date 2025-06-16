@@ -86,13 +86,12 @@ app.MapPost("/api/refresh-tokens", async (
 app.MapGet("/api/me", async (
     HttpContext context,
     IUserService userService,
-    ITokenReader tokenReader) =>
+    ITokenReader reader) =>
 {
-    string id = tokenReader.ReadToken(context.Request.Cookies["accessToken"], "Id");
-    if (string.IsNullOrWhiteSpace(id))
-        return Results.BadRequest("Invalid token data");
+    var accessToken = context.Request.Cookies["accessToken"]!;
+    var id = Guid.Parse(reader.ReadToken(accessToken, "Id"));
 
-    var response = await userService.GetUser(Guid.Parse(id));
+    var response = await userService.GetUser(id);
 
     return response.IsSuccess? Results.Ok(response.Value) : Results.BadRequest(response.Error);
 }).RequireAuthorization();

@@ -42,4 +42,12 @@ public class PostsRepository : IPostsRepository
             .AsNoTracking()
             .ToListAsync();
     }
+
+    public async Task<PostEntity?> GetById(Guid id)
+    {
+        return await _dbContext.Posts
+            .Include(p => p.Comments)
+            .AsNoTracking()
+            .FirstOrDefaultAsync(p => p.Id == id);
+    }
 }
