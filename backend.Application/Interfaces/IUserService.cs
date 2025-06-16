@@ -1,12 +1,14 @@
-using backend.Application.ResponseModels;
-using backend.Core.Entities;
+using backend.Application.Models.RequestModels;
+using backend.Application.Models.RequestModels;
+using backend.Application.Models.ResponseModels;
 using backend.Core.Models.FilterModels;
 using backend.Core.Results;
+using Microsoft.AspNetCore.Http;
 
 namespace backend.Application.Interfaces;
 public interface IUserService
 {
-    Task<Result<UserInfoResponse>> GetUserInfo(Guid id);
-    Task<Result<List<UserInfoResponse>>> Get(UserFilter filter);
-    Task<Result<UserInfoResponse?>> GetUser(string username);
+    Task<Result<List<UserResponse>>> Get(UserFilter filter);
+    Task<Result<UserResponse?>> GetUser(Guid id);
+    Task<Result> Update(Guid id, UpdateUserRequest request);
 }

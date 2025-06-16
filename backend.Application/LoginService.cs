@@ -1,8 +1,7 @@
 using backend.Application.Interfaces;
-using backend.Application.ResponseModels;
+using backend.Application.Models.ResponseModels;
 using backend.Core.Entities;
 using backend.Core.Results;
-using backend.Infrastructure;
 using backend.Core.Interfaces.Repositories;
 using Microsoft.Extensions.Options;
 
@@ -44,7 +43,7 @@ public class LoginService : ILoginService
         {
             Id = Guid.NewGuid(),
             Token = _tokenProvider.GenerateRefreshToken(),
-            ExpireIn = DateTime.UtcNow.AddHours(_options.RefreshTokenValidityMins),
+            ExpireIn = DateTime.UtcNow.AddHours(_options.RefreshTokenValidityHours),
             UserId = user.Id
         };
         await _refreshTokensRepository.Add(refreshToken);

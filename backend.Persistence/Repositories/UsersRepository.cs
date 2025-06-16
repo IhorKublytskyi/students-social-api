@@ -2,8 +2,9 @@ using backend.Core.Entities;
 using backend.Core.Interfaces.Repositories;
 using backend.Core.Models.FilterModels;
 using Microsoft.EntityFrameworkCore;
+using Persistence;
 
-namespace Persistence.Repositories;
+namespace backend.Persistence.Repositories;
 
 public class UsersRepository : IUsersRepository
 {
@@ -26,10 +27,12 @@ public class UsersRepository : IUsersRepository
     }
 
     public async Task<UserEntity?> GetById(Guid id)
-    {
+    {   
         return await _dbContext.Users
             .AsNoTracking()
-            .Include(u => u.Subscriptions)
+            .Include(p => p.Posts)
+            .Include(p => p.Followers)
+            .Include(p => p.FollowedUsers)
             .FirstOrDefaultAsync(u => u.Id == id);
     }
 
@@ -44,13 +47,17 @@ public class UsersRepository : IUsersRepository
     {
         return await _dbContext.Users
             .AsNoTracking()
-            .Include(u => u.Subscriptions)  
             .FirstOrDefaultAsync(u => u.Username == username);
     }
 
     public async Task<List<UserEntity>> GetByFilter(UserFilter filter)
     {
-        var query = _dbContext.Users.AsQueryable();
+        var query = _dbContext.Users
+            .Include(p => p.Posts)
+            .Include(p => p.Followers)
+            .Include(p => p.FollowedUsers)
+            .AsQueryable();
+
         if (filter.Year != null)
         {
             query = query.Where(u => u.BirthDate.Year == filter.Year);
@@ -67,5 +74,19 @@ public class UsersRepository : IUsersRepository
         }
 
         return await query.ToListAsync();
+    }
+
+    public async Task Update(Guid id, string email, string username, string firstName, string lastName, byte[]profilePicture, string status, DateTime birthDate, string biography)
+    {
+        await _dbContext.Users
+            .Where(u => u.Id == id)
+            .ExecuteUpdateAsync(u => u
+                .SetProperty(p => p.Email, email)
+                .SetProperty(p => p.Username, username)
+                .SetProperty(p => p.FirstName, firstName)
+                .SetProperty(p => p.LastName, lastName)
+                .SetProperty(p => p.Status, status)
+                .SetProperty(p => p.BirthDate, birthDate)
+                .SetProperty(p => p.Biography, biography));
     }
 }

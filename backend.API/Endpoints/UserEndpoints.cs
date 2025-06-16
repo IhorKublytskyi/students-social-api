@@ -1,5 +1,5 @@
 using backend.Application.Interfaces;
-using backend.Core.Interfaces.Repositories;
+using backend.Application.Models.RequestModels;
 using backend.Core.Models.FilterModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,15 +13,15 @@ public static class UserEndpoints
 
         //Users GET
         userGroup.MapGet("/", async (
-            [FromQuery] string? username,
+            [FromQuery] Guid? id,
             [FromQuery] int? year,
             [FromQuery] string? firstName,
             [FromQuery] string? lastName,
             IUserService service) =>
         {
-            if (username != null)
+            if (id != null)
             {
-                var user = await service.GetUser(username);
+                var user = await service.GetUser((Guid)id);
 
                 return user.IsSuccess ? Results.Ok(user.Value) : Results.BadRequest(user.Error);
             }
@@ -40,6 +40,19 @@ public static class UserEndpoints
 
         }).RequireAuthorization();
 
+        //Users PUT
+        userGroup.MapPut("/", async (
+            [FromQuery] Guid id, 
+            [FromBody] UpdateUserRequest request,
+            IUserService service,
+            IUpdateUserValidationService validator) =>
+        {
+            var result = await service.Update(id, request);
+
+            return result.IsSuccess ? Results.Ok() : Results.BadRequest(result.Error);
+        });
+        
+        
         //Users subscribe POST
         userGroup.MapPost("/subscribe", async (
             [FromQuery] string subscribedUsername,

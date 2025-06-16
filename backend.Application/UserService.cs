@@ -1,64 +1,36 @@
 using backend.Application.Interfaces;
-using backend.Application.ResponseModels;
-using backend.Core.Entities;
+using backend.Application.Models.RequestModels;
+using backend.Application.Models.ResponseModels;
 using backend.Core.Interfaces.Repositories;
 using backend.Core.Models.FilterModels;
 using backend.Core.Results;
-
+using Microsoft.AspNetCore.Http;
 namespace backend.Application;
 
 public class UserService : IUserService
 {
     private readonly IUsersRepository _repository;
-    private readonly ISubscriptionsRepository _subscriptionsRepository;
-    private readonly IPostsRepository _postsRepository;
+    private readonly IUpdateUserValidationService _updateUserValidator;
 
-    public UserService(IUsersRepository repository, ISubscriptionsRepository subscriptionsRepository, IPostsRepository postsRepository)
+    public UserService(
+        IUsersRepository repository, 
+        IUpdateUserValidationService updateUserValidator)
     {
         _repository = repository;
-        _subscriptionsRepository = subscriptionsRepository;
-        _postsRepository = postsRepository;
+        _updateUserValidator = updateUserValidator;
     }
 
-    public async Task<Result<UserInfoResponse>> GetUserInfo(Guid id)
-    {
-        var user = await _repository.GetById(id);
-
-        if (user == null)
-            return Result<UserInfoResponse>.Failure("User not found");
-
-        var subscriptions =  GetUserSubscriptions(user);
-
-        var userInfo = new UserInfoResponse()
-        {
-            Email = user.Email,
-            Username = user.Username,
-            FirstName = user.FirstName,
-            LastName = user.LastName,
-            ProfilePicture = user.ProfilePicture,
-            Status = user.Status,
-            BirthDate = user.BirthDate,
-            Biography = user.Biography,
-            CreatedAt = user.CreatedAt,
-            FollowersCount = subscriptions.followersCount,
-            FollowedCount = subscriptions.followedCount
-        };
-        
-        return Result<UserInfoResponse>.Success(userInfo);
-    }
-
-    public async Task<Result<List<UserInfoResponse>>> Get(UserFilter filter)
+    public async Task<Result<List<UserResponse>>> Get(UserFilter filter)
     {
         var filteredUsers = await _repository.GetByFilter(filter);
         if(filteredUsers.Count == 0)
-            return Result<List<UserInfoResponse>>.Failure("Users not found");
+            return Result<List<UserResponse>>.Failure("Users not found");
         
-        var result = filteredUsers.Select(u =>
+        var result = filteredUsers.Select( u =>
         {
-            var subscriptions =  GetUserSubscriptions(u);
-            
-            return new UserInfoResponse()
+            return new UserResponse()
             {
+                Id = u.Id,
                 Email = u.Email,
                 Username = u.Username,
                 FirstName = u.FirstName,
@@ -68,24 +40,23 @@ public class UserService : IUserService
                 BirthDate = u.BirthDate,
                 Biography = u.Biography,
                 CreatedAt = u.CreatedAt,
-                FollowersCount = subscriptions.followersCount,
-                FollowedCount = subscriptions.followedCount
+                FollowersCount = u.Followers.Count,
+                FollowedCount = u.FollowedUsers.Count,
+                PostsCounts = u.Posts.Count
             };
-        }).ToList();
+        });
         
-        return Result<List<UserInfoResponse>>.Success(result);
+        return Result<List<UserResponse>>.Success(result.ToList());
     }
-    public async Task<Result<UserInfoResponse?>> GetUser(string username)
-    { 
-        var user = await _repository.GetByUsername(username);
+    public async Task<Result<UserResponse>> GetUser(Guid id)
+    {
+        var user = await _repository.GetById(id);
         if(user == null)
-            return Result<UserInfoResponse?>.Failure("User not found");
-
-        var subscriptions = GetUserSubscriptions(user);
-        var postsCount = await GetPosts(user);
+            return Result<UserResponse>.Failure("User not found");
         
-        var userInfo = new UserInfoResponse()
+        var response = new UserResponse()
         {
+            Id = user.Id,
             Email = user.Email,
             Username = user.Username,
             FirstName = user.FirstName,
@@ -95,25 +66,24 @@ public class UserService : IUserService
             BirthDate = user.BirthDate,
             Biography = user.Biography,
             CreatedAt = user.CreatedAt,
-            FollowersCount = subscriptions.followersCount,
-            FollowedCount = subscriptions.followedCount,
-            PostsCounts = postsCount
+            FollowersCount = user.Followers.Count,
+            FollowedCount = user.FollowedUsers.Count,
+            PostsCounts = user.Posts.Count
         };
 
-        return Result<UserInfoResponse>.Success(userInfo);
+        return Result<UserResponse>.Success(response);
     }
 
-    private async Task<int> GetPosts(UserEntity user)
+    public async Task<Result> Update(Guid id, UpdateUserRequest request)
     {
-        var posts = await _postsRepository.GetByUserId(user.Id);
+        var user = await _repository.GetById(id);
+        if(user == null)
+            return Result.Failure("User not found");
 
-        return posts.Count;
-    }
-    private (int followersCount, int followedCount) GetUserSubscriptions(UserEntity user)
-    {
-        int followersCount = _subscriptionsRepository.GetFollowers(user);
-        int followedCount = _subscriptionsRepository.GetFollowed(user);
-
-        return (followersCount, followedCount);
+        request = _updateUserValidator.Validate(request, user); 
+        
+        await _repository.Update(user.Id, request.Email, request.Username, request.FirstName, request.LastName, request.ProfilePicture, request.Status, DateTime.Parse(request.BirthDate), request.Biography);
+        
+        return Result.Success();
     }
 }

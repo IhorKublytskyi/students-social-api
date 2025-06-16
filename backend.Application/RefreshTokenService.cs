@@ -1,8 +1,7 @@
 using backend.Application.Interfaces;
-using backend.Application.ResponseModels;
+using backend.Application.Models.ResponseModels;
 using backend.Core.Entities;
 using backend.Core.Results;
-using backend.Infrastructure;
 using Microsoft.Extensions.Options;
 using backend.Core.Interfaces.Repositories;
 
@@ -29,6 +28,7 @@ public class RefreshTokenService : IRefreshTokenService
         var refreshToken = await _refreshTokensRepository.Get(refreshTokenValue);
         if (refreshToken == null)
             return Result<TokensResponse>.Failure("Refresh token not found");
+        var utcnow = DateTime.UtcNow;
         if (refreshToken.ExpireIn < DateTime.UtcNow)
             return Result<TokensResponse>.Failure("Refresh token has expired");
 
@@ -39,7 +39,7 @@ public class RefreshTokenService : IRefreshTokenService
         refreshToken = new RefreshTokenEntity
         {
             Id = Guid.NewGuid(),
-            ExpireIn = DateTime.UtcNow.AddHours(_options.RefreshTokenValidityMins),
+            ExpireIn = DateTime.UtcNow.AddHours(_options.RefreshTokenValidityHours),
             Token = _tokenProvider.GenerateRefreshToken(),
             UserId = user.Id
         };

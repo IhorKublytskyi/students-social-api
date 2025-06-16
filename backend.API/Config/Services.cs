@@ -2,10 +2,10 @@ using backend.Application;
 using backend.Application.Interfaces;
 using backend.Core.Interfaces.Repositories;
 using backend.Infrastructure;
+using backend.Persistence.Repositories;
 using Persistence;
-using Persistence.Repositories;
 
-namespace backend.API.Extensions;
+namespace backend.API.Config;
 
 public static class Services
 {
@@ -22,7 +22,7 @@ public static class Services
         services.AddScoped<ITokenReader, TokenReader>();
         services.AddScoped<ISubscriptionService, SubscriptionService>();
         services.AddScoped<IRegistrationService, RegistrationService>();
-        services.AddScoped<IRegistrationDataValidation, RegistrationDataValidation>();
+        services.AddScoped<IRegistrationDataValidation, RegistrationDataValidationService>();
         services.AddScoped<ILoginService, LoginService>();
         services.AddScoped<IRefreshTokenService, RefreshTokenService>();
         services.AddScoped<IUserService, UserService>();
@@ -32,6 +32,7 @@ public static class Services
         services.AddScoped<ICommentsRepository, CommentsRepository>();
         services.AddScoped<IRefreshTokensRepository, RefreshTokensRepository>();
         services.AddScoped<ISubscriptionsRepository, SubscriptionsRepository>();
+        services.AddScoped<IUpdateUserValidationService, UpdateUserValidationService>();
 
         return services;
     }

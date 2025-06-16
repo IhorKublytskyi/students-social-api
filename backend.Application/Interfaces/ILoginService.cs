@@ -1,4 +1,4 @@
-using backend.Application.ResponseModels;
+using backend.Application.Models.ResponseModels;
 using backend.Core.Results;
 
 namespace backend.Application.Interfaces;

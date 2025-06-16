@@ -1,4 +1,4 @@
-using backend.Application.RequestModels;
+using backend.Application.Models.RequestModels;
 using backend.Core.Results;
 
 namespace backend.Application.Interfaces;

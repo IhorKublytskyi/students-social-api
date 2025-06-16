@@ -12,8 +12,8 @@ using Persistence;
 namespace backend.Persistence.Migrations
 {
     [DbContext(typeof(StudentsSocialDbContext))]
-    [Migration("20250606084426_Init")]
-    partial class Init
+    [Migration("20250616104832_updateUserEntity")]
+    partial class updateUserEntity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -100,14 +100,13 @@ namespace backend.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<byte[]>("Data")
+                        .IsRequired()
+                        .HasColumnType("bytea")
+                        .HasColumnName("Data");
+
                     b.Property<Guid>("PostId")
                         .HasColumnType("uuid");
-
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("Images");
 
                     b.HasKey("Id");
 
@@ -317,10 +316,10 @@ namespace backend.Persistence.Migrations
                         .HasColumnType("character varying(255)")
                         .HasColumnName("Password");
 
-                    b.Property<string>("ProfilePicture")
+                    b.Property<byte[]>("ProfilePicture")
                         .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
+                        .HasColumnType("bytea")
                         .HasColumnName("ProfilePicture");
 
                     b.Property<string>("Status")
@@ -346,14 +345,13 @@ namespace backend.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<byte[]>("Data")
+                        .IsRequired()
+                        .HasColumnType("bytea")
+                        .HasColumnName("Data");
+
                     b.Property<Guid>("PostId")
                         .HasColumnType("uuid");
-
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("Url");
 
                     b.HasKey("Id");
 
@@ -531,13 +529,13 @@ namespace backend.Persistence.Migrations
             modelBuilder.Entity("backend.Core.Entities.SubscriptionEntity", b =>
                 {
                     b.HasOne("backend.Core.Entities.UserEntity", "SubscribedTo")
-                        .WithMany()
+                        .WithMany("Followers")
                         .HasForeignKey("SubscribedToId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("backend.Core.Entities.UserEntity", "Subscriber")
-                        .WithMany("Subscriptions")
+                        .WithMany("FollowedUsers")
                         .HasForeignKey("SubscriberId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -588,13 +586,15 @@ namespace backend.Persistence.Migrations
 
                     b.Navigation("FavouritePosts");
 
+                    b.Navigation("FollowedUsers");
+
+                    b.Navigation("Followers");
+
                     b.Navigation("Likes");
 
                     b.Navigation("LikesComments");
 
                     b.Navigation("Posts");
-
-                    b.Navigation("Subscriptions");
 
                     b.Navigation("Tags");
                 });

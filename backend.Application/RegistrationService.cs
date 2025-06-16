@@ -1,5 +1,5 @@
 using backend.Application.Interfaces;
-using backend.Application.RequestModels;
+using backend.Application.Models.RequestModels;
 using backend.Core.Entities;
 using backend.Core.Results;
 using backend.Core.Interfaces.Repositories;

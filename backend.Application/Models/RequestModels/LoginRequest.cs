@@ -1,4 +1,4 @@
-namespace backend.Application.RequestModels;
+namespace backend.Application.Models.RequestModels;
 
 public record LoginRequest
 {

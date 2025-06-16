@@ -20,8 +20,14 @@ public class SubscriptionEntityConfiguration : IEntityTypeConfiguration<Subscrip
 
         builder
             .HasOne(s => s.Subscriber)
-            .WithMany(u => u.Subscriptions)
+            .WithMany(u => u.FollowedUsers)
             .HasForeignKey(s => s.SubscriberId)
             .IsRequired();
+        builder
+            .HasOne(s => s.SubscribedTo)
+            .WithMany(u => u.Followers)
+            .HasForeignKey(s => s.SubscribedToId)
+            .IsRequired();
+
     }
 }

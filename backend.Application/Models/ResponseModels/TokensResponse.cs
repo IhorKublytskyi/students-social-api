@@ -1,4 +1,4 @@
-namespace backend.Application.ResponseModels;
+namespace backend.Application.Models.ResponseModels;
 
 public class TokensResponse
 {

@@ -2,6 +2,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using backend.Application;
 using backend.Application.Interfaces;
 using backend.Core.Entities;
 using Microsoft.Extensions.Options;

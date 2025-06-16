@@ -12,7 +12,7 @@ public class ImageEntityConfiguration : IEntityTypeConfiguration<ImageEntity>
 
         builder.HasKey(i => i.Id);
 
-        builder.Property(i => i.Url).HasMaxLength(50).HasColumnName("Images");
+        builder.Property(i => i.Data).HasColumnType("bytea").HasColumnName("Data");
 
         builder
             .HasOne(i => i.Post)

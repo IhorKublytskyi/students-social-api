@@ -1,6 +1,6 @@
 using backend.API.Endpoints;
 
-namespace backend.API.Extensions;
+namespace backend.API.Config;
 
 public static class EndpointsMapper
 {

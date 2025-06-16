@@ -11,4 +11,5 @@ public interface IUsersRepository
     Task<UserEntity?> GetById(Guid id);
     Task<UserEntity?> GetByUsername(string username);
     Task<List<UserEntity>> GetByFilter(UserFilter filter);
+    Task Update(Guid id, string email, string username, string firstName, string lastName, byte[]profilePicture, string status, DateTime birthDate, string biography);
 }

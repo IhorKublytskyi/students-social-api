@@ -1,10 +1,10 @@
 using backend.Application.Interfaces;
-using backend.Application.RequestModels;
+using backend.Application.Models.RequestModels;
 using backend.Core.Results;
 
 namespace backend.Application;
 
-public class RegistrationDataValidation : IRegistrationDataValidation
+public class RegistrationDataValidationService : IRegistrationDataValidation
 {
     public Result Validate(RegistrationRequest request)
     {

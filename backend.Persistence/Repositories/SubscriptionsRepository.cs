@@ -1,8 +1,9 @@
 using backend.Core.Entities;
 using backend.Core.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Persistence;
 
-namespace Persistence.Repositories;
+namespace backend.Persistence.Repositories;
 
 public class SubscriptionsRepository : ISubscriptionsRepository
 {

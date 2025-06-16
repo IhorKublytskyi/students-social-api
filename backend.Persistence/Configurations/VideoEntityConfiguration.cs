@@ -12,7 +12,7 @@ public class VideoEntityConfiguration : IEntityTypeConfiguration<VideoEntity>
 
         builder.HasKey(v => v.Id);
 
-        builder.Property(v => v.Url).HasMaxLength(50).HasColumnName("Url");
+        builder.Property(v => v.Data).HasColumnType("bytea").HasColumnName("Data");
 
         builder
             .HasOne(v => v.Post)

@@ -1,5 +1,5 @@
-using backend.Application.RequestModels;
-using backend.Application.ResponseModels;
+using backend.Application.Models.RequestModels;
+using backend.Application.Models.ResponseModels;
 using backend.Core.Entities;
 using backend.Core.Interfaces.Repositories;
 using Microsoft.AspNetCore.Mvc;

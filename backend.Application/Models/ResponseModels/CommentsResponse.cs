@@ -1,6 +1,6 @@
 using backend.Core.Entities;
 
-namespace backend.Application.ResponseModels;
+namespace backend.Application.Models.ResponseModels;
 
 public record CommentsResponse
 {

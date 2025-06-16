@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace backend.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class updateUserEntity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,7 +21,7 @@ namespace backend.Persistence.Migrations
                     Username = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
                     Firstname = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
                     Lastname = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
-                    ProfilePicture = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
+                    ProfilePicture = table.Column<byte[]>(type: "bytea", maxLength: 50, nullable: false),
                     Status = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     BirthDate = table.Column<DateTime>(type: "timestamp", nullable: false),
                     Biography = table.Column<string>(type: "character varying(255)", maxLength: 255, nullable: false),
@@ -183,7 +183,7 @@ namespace backend.Persistence.Migrations
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     PostId = table.Column<Guid>(type: "uuid", nullable: false),
-                    Images = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false)
+                    Data = table.Column<byte[]>(type: "bytea", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -252,7 +252,7 @@ namespace backend.Persistence.Migrations
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     PostId = table.Column<Guid>(type: "uuid", nullable: false),
-                    Url = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false)
+                    Data = table.Column<byte[]>(type: "bytea", nullable: false)
                 },
                 constraints: table =>
                 {

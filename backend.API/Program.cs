@@ -1,6 +1,6 @@
-using backend.API.Extensions;
+using backend.API.Config;
 using backend.Application.Interfaces;
-using backend.Application.RequestModels;
+using backend.Application.Models.RequestModels;
 using Microsoft.AspNetCore.CookiePolicy;
 using Microsoft.AspNetCore.Mvc;
 
@@ -92,9 +92,9 @@ app.MapGet("/api/me", async (
     if (string.IsNullOrWhiteSpace(id))
         return Results.BadRequest("Invalid token data");
 
-    var user = await userService.GetUserInfo(Guid.Parse(id));
+    var response = await userService.GetUser(Guid.Parse(id));
 
-    return user == null ? Results.BadRequest(user.Error) : Results.Ok(user.Value);
+    return response.IsSuccess? Results.Ok(response.Value) : Results.BadRequest(response.Error);
 }).RequireAuthorization();
 
 app.Run();
