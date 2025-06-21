@@ -23,7 +23,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapPost("/api/register", async (
-    RegistrationRequest request,
+    [FromBody]RegistrationRequest request,
     IRegistrationService service,
     IRegistrationDataValidation validator) =>
 {
