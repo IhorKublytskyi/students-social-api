@@ -1,0 +1,16 @@
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\StudentsSocial.Application.csproj.AssemblyReference.cache
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\StudentsSocial.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\StudentsSocial.Application.AssemblyInfoInputs.cache
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\StudentsSocial.Application.AssemblyInfo.cs
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\StudentsSocial.Application.csproj.CoreCompileInputs.cache
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\StudentsSocial.Application.sourcelink.json
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\bin\Debug\net9.0\StudentsSocial.Application.deps.json
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\bin\Debug\net9.0\StudentsSocial.Application.dll
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\bin\Debug\net9.0\StudentsSocial.Application.pdb
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\bin\Debug\net9.0\StudentsSocial.Core.dll
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\bin\Debug\net9.0\StudentsSocial.Core.pdb
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\Students.C60454CD.Up2Date
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\StudentsSocial.Application.dll
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\refint\StudentsSocial.Application.dll
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\StudentsSocial.Application.pdb
+C:\Users\igorl\OneDrive\Desktop\backend\StudentsSocial.Application\obj\Debug\net9.0\ref\StudentsSocial.Application.dll

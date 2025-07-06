@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.API", "backend.API\backend.API.csproj", "{3099D72E-018F-53A0-4784-AB5C5495B65A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.Core", "backend.Core\backend.Core.csproj", "{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.Infrastructure", "backend.Infrastructure\backend.Infrastructure.csproj", "{20D4AB54-7165-F92E-5417-8419E58E72CA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.Persistence", "backend.Persistence\backend.Persistence.csproj", "{BD221718-02C0-420A-A9F7-53A769C01576}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsSocial.API", "StudentsSocial.API\StudentsSocial.API.csproj", "{5B5D4CEF-EB3A-D63C-A8E8-FD068DE308A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.Application", "backend.Application\backend.Application.csproj", "{4450185B-F14C-4C6A-A545-7049217B4E4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsSocial.Application", "StudentsSocial.Application\StudentsSocial.Application.csproj", "{20030F61-0F1D-4D2F-5E94-8B3A837EF1A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsSocial.Core", "StudentsSocial.Core\StudentsSocial.Core.csproj", "{351543E9-B416-3BC7-81F9-5AD5D8DFEE83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsSocial.Infrastructure", "StudentsSocial.Infrastructure\StudentsSocial.Infrastructure.csproj", "{7C487C6F-E902-B8AC-B494-BEF9636B25FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsSocial.Persistence", "StudentsSocial.Persistence\StudentsSocial.Persistence.csproj", "{87A93E80-2FD9-D7DE-D502-395FD5943A9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,26 +25,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3099D72E-018F-53A0-4784-AB5C5495B65A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3099D72E-018F-53A0-4784-AB5C5495B65A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3099D72E-018F-53A0-4784-AB5C5495B65A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3099D72E-018F-53A0-4784-AB5C5495B65A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{025FCB2B-B2B4-A1BD-F289-5D7E38ACDA49}.Release|Any CPU.Build.0 = Release|Any CPU
-		{20D4AB54-7165-F92E-5417-8419E58E72CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20D4AB54-7165-F92E-5417-8419E58E72CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20D4AB54-7165-F92E-5417-8419E58E72CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20D4AB54-7165-F92E-5417-8419E58E72CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BD221718-02C0-420A-A9F7-53A769C01576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD221718-02C0-420A-A9F7-53A769C01576}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD221718-02C0-420A-A9F7-53A769C01576}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD221718-02C0-420A-A9F7-53A769C01576}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4450185B-F14C-4C6A-A545-7049217B4E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4450185B-F14C-4C6A-A545-7049217B4E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4450185B-F14C-4C6A-A545-7049217B4E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4450185B-F14C-4C6A-A545-7049217B4E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5D4CEF-EB3A-D63C-A8E8-FD068DE308A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5D4CEF-EB3A-D63C-A8E8-FD068DE308A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5D4CEF-EB3A-D63C-A8E8-FD068DE308A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5D4CEF-EB3A-D63C-A8E8-FD068DE308A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20030F61-0F1D-4D2F-5E94-8B3A837EF1A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20030F61-0F1D-4D2F-5E94-8B3A837EF1A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20030F61-0F1D-4D2F-5E94-8B3A837EF1A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20030F61-0F1D-4D2F-5E94-8B3A837EF1A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351543E9-B416-3BC7-81F9-5AD5D8DFEE83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351543E9-B416-3BC7-81F9-5AD5D8DFEE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351543E9-B416-3BC7-81F9-5AD5D8DFEE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351543E9-B416-3BC7-81F9-5AD5D8DFEE83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C487C6F-E902-B8AC-B494-BEF9636B25FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C487C6F-E902-B8AC-B494-BEF9636B25FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C487C6F-E902-B8AC-B494-BEF9636B25FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C487C6F-E902-B8AC-B494-BEF9636B25FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A93E80-2FD9-D7DE-D502-395FD5943A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A93E80-2FD9-D7DE-D502-395FD5943A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A93E80-2FD9-D7DE-D502-395FD5943A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A93E80-2FD9-D7DE-D502-395FD5943A9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
